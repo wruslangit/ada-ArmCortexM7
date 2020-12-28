@@ -1,16 +1,20 @@
 
 Board Identification Model: STM32-F767ZI Nucleo-144 Board
 ===========================================================
-Purchased LAZADA: Waveshare NUCLEO-F767ZI, STM32 Nucleo-144 Development Board.
-Confirmed Order 271891349916955 on Sunday, 27 December, 2020 at 20:01:46.
+STMicroelectronics STM32 Nucleo-144 Development Board.
+
+STM32F7 series Arm® Cortex®-M7 powered
+
+Ordered (China) through LAZADA (27 Dec 2020) for Waveshare NUCLEO-F767ZI, STM32 Nucleo-144 Development Board.
+Yay, your Order 271891349916955 is confirmed!
 
 In PDF documentation, STM32 Nucleo-144 boards,
 Table 2. Codification explanation Page (3/8)
 ===========================================================
-F7	:MCU series in STM32 Arm Cortex MCUs	: STM32F7 Series
-67	:MCU product line in the series			: STM32F767
-Z	:STM32 package pin count				: 144 pins
-I	:STM32 Flash memory size				: 2 MBytes
+F7	:MCU series in STM32 Arm Cortex MCUs    : STM32F7 Series
+67	:MCU product line in the series         : STM32F767
+Z	:STM32 package pin count                : 144 pins
+I	:STM32 Flash memory size                : 2 MBytes
 ===========================================================
 
 (1) Common Board features
@@ -39,8 +43,8 @@ including IAR TM , Keil, and STM32CubeIDE
 (2.2) Ethernet compliant with IEEE-802.3-2002
 (2.3) USB OTG full speed or device only
 (2.4) Board connectors:
-		USB with Micro-AB or USB Type-C TM
-		Ethernet RJ45
+      USB with Micro-AB or USB Type-C TM
+      Ethernet RJ45
 (2.5) Arm Mbed Enabled TM compliant
 
 ===========================================================
@@ -50,9 +54,9 @@ GET SOFTWARE IDE (for Linux)
 STM32CubeIDE = Integrated Development Environment for STM32 (636 MB - DEB FILE)
 
 https://www.st.com/en/development-tools/stm32cubeide.html#
-wruslandr@gmail.com
+REGISTER: wruslandr@gmail.com
+
 ===========================================================
 ALHAMDULILLAH 3 TIMES WRY.
 ===========================================================
-
 

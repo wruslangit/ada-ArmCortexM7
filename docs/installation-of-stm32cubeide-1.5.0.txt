@@ -72,6 +72,8 @@ Opening the STM32CubeIDE GUI Application
 Menu -> Applications -> Programming -> STMicroelectronics STM32CubeIDE version
 See screenshots (Eclipse-based look and feel)
 
+VIDEO: https://blog.st.com/stm32cubeide-free-ide/
+
 Ha ha ha.
 ===========================================================
 ALHAMDULILLAH 3 TIMES WRY.
