@@ -13,6 +13,7 @@ Release:	20.04
 Codename:	focal
 wruslan@HPEliteBook8470p-Ub2004-rt38:~/opt$ 
 
+INSTALL
 ===========================================================
 wruslan@HPEliteBook8470p-Ub2004-rt38:~/opt$ sudo ./st-stm32cubeide_1.5.0_8698_20201117_1050_amd64.deb_bundle.sh 
 Creating directory makeself_dir_nuvc9p
