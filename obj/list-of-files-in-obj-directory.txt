@@ -1,0 +1,24 @@
+
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-ArmCortexM7/obj$ ls -al
+total 160
+drwxrwxr-x 2 wruslan wruslan  4096 Dec 29 23:00 .
+drwxrwxr-x 8 wruslan wruslan  4096 Dec 29 22:57 ..
+-rw-rw-r-- 1 wruslan wruslan 11346 Dec 29 23:00 b__main_ada_armcortexm7.adb
+-rw-rw-r-- 1 wruslan wruslan 28222 Dec 29 23:00 b__main_ada_armcortexm7.ads
+-rw-rw-r-- 1 wruslan wruslan 13231 Dec 29 23:00 b__main_ada_armcortexm7.ali
+-rw-rw-r-- 1 wruslan wruslan 22992 Dec 29 23:00 b__main_ada_armcortexm7.o
+-rw-rw-r-- 1 wruslan wruslan  3838 Dec 29 23:00 gpsauto.cgpr
+-rw-rw-r-- 1 wruslan wruslan     0 Dec 29 23:00 main_ada_armcortexm7.adb.stderr
+-rw-rw-r-- 1 wruslan wruslan     0 Dec 29 23:00 main_ada_armcortexm7.adb.stdout
+-rw-rw-r-- 1 wruslan wruslan  4550 Dec 29 23:00 main_ada_armcortexm7.ali
+-rw-rw-r-- 1 wruslan wruslan   674 Dec 29 23:00 main_ada_armcortexm7.bexch
+-rw-rw-r-- 1 wruslan wruslan    45 Dec 29 23:00 main_ada_armcortexm7.cswi
+-rw-rw-r-- 1 wruslan wruslan  2488 Dec 29 23:00 main_ada_armcortexm7.o
+-rw-rw-r-- 1 wruslan wruslan     0 Dec 29 23:00 pkg_ada_dtstamp.adb.stderr
+-rw-rw-r-- 1 wruslan wruslan     0 Dec 29 23:00 pkg_ada_dtstamp.adb.stdout
+-rw-rw-r-- 1 wruslan wruslan 10904 Dec 29 23:00 pkg_ada_dtstamp.ali
+-rw-rw-r-- 1 wruslan wruslan    45 Dec 29 23:00 pkg_ada_dtstamp.cswi
+-rw-rw-r-- 1 wruslan wruslan 31888 Dec 29 23:00 pkg_ada_dtstamp.o
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-ArmCortexM7/obj$ 
+
+

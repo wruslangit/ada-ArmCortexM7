@@ -1,0 +1,8 @@
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-ArmCortexM7/exec$ ls -al
+total 76
+drwxrwxr-x 2 wruslan wruslan  4096 Dec 29 23:01 .
+drwxrwxr-x 8 wruslan wruslan  4096 Dec 29 22:57 ..
+-rw-rw-r-- 1 wruslan wruslan   412 Dec 29 22:47 list-of-files-in-exec-ditectory.txt
+-rwxrwxr-x 1 wruslan wruslan 65336 Dec 29 23:00 main_ada_armcortexm7.xxx
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/ada-ArmCortexM7/exec$ 
+
