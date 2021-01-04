@@ -1,0 +1,81 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/arduino-due/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U atsam3x8e.trng%s	atsam3x8e-trng.ads	327559b6 NE OO PR PK IU
+W atsam3x8e%s		atsam3x8e.ads		atsam3x8e.ali
+W system%s		system.ads		system.ali
+
+D atsam3x8e.ads		20160325164151 de751321 atsam3x8e%s
+D atsam3x8e-trng.ads	20160325164151 6bbb7f83 atsam3x8e.trng%s
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D system.ads		20160313164745 87bb3514 system%s
+X 1 atsam3x8e.ads
+12K9*ATSAM3X8E 162e14 2|10r9 21r31 22r28 29r22 45r32 52r23 65r32 72r23 85r32
+. 92r23 105r32 112r23 138r15 155r5
+19M12*Word{3|63M9} 2|138r25
+22M9*Bit 2|21r41 45r42 65r42 85r42 105r42
+34M9*UInt7 2|29r32
+64M9*UInt24 2|22r38
+78M9*UInt31 2|52r33 72r33 92r33 112r33
+119m4*TRNG_Base{4|81M9} 2|153r30
+X 2 atsam3x8e-trng.ads
+10K19*TRNG 1|12k9 2|155l15 155e19
+21M12*CR_ENABLE_Field{1|22M9} 27r22
+22M12*CR_KEY_Field{1|64M9} 31r22
+25R9*CR_Register 33e6 35r8 128r15
+27m7*ENABLE{21M12} 36r7
+29m7*Reserved_1_7{1|34M9} 37r7
+31m7*KEY{22M12} 38r7
+45M12*IER_DATRDY_Field{1|22M9} 50r23
+48R9*IER_Register 54e6 56r8 130r15
+50m7*DATRDY{45M12} 57r7
+52m7*Reserved_1_31{1|78M9} 58r7
+65M12*IDR_DATRDY_Field{1|22M9} 70r23
+68R9*IDR_Register 74e6 76r8 132r15
+70m7*DATRDY{65M12} 77r7
+72m7*Reserved_1_31{1|78M9} 78r7
+85M12*IMR_DATRDY_Field{1|22M9} 90r23
+88R9*IMR_Register 94e6 96r8 134r15
+90m7*DATRDY{85M12} 97r7
+92m7*Reserved_1_31{1|78M9} 98r7
+105M12*ISR_DATRDY_Field{1|22M9} 110r23
+108R9*ISR_Register 114e6 116r8 136r15
+110m7*DATRDY{105M12} 117r7
+112m7*Reserved_1_31{1|78M9} 118r7
+126R9*TRNG_Peripheral 140e6 142r8 152r26
+128r7*CR{25R9} 143r7
+130r7*IER{48R9} 144r7
+132r7*IDR{68R9} 145r7
+134r7*IMR{88R9} 146r7
+136r7*ISR{108R9} 147r7
+138m7*ODATA{1|19M12} 148r7
+152r4*TRNG_Periph{126R9}
+X 3 interfac.ads
+63M9*Unsigned_32
+X 4 system.ads
+54K9*System 2|7w6 33r46 54r46 74r46 94r46 114r46 4|180e11
+81M9*Address
+105n41*Low_Order_First{105E9} 2|33r53 54r53 74r53 94r53 114r53
+

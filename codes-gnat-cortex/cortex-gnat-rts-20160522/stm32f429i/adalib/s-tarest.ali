@@ -1,0 +1,175 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/stm32f429i/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U system.tasking.restricted.stages%b  s-tarest.adb  0956c797 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.unchecked_conversion%s
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.address_to_access_conversions%s
+W system.freertos%s	s-freert.ads		s-freert.ali
+W system.freertos.tcb%s	s-fretcb.adb		s-fretcb.ali
+W system.memory%s	s-memory.adb		s-memory.ali
+W system.tasking.restricted%s  s-tasres.ads	s-tasres.ali
+
+U system.tasking.restricted.stages%s  s-tarest.ads  d9d077c0 NE OL PR PK
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.task_info%s	s-tasinf.ads		s-tasinf.ali
+W system.tasking.restricted%s  s-tasres.ads	s-tasres.ali
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-except.ads		20160518112140 9a286512 ada.exceptions%s
+D a-unccon.ads		20160108121556 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-atacco.ads		20160108121556 4c36d12f system.address_to_access_conversions%s
+D s-freert.ads		20160518111901 32bda127 system.freertos%s
+D s-fretas.ads		20160518112007 31156819 system.freertos.tasks%s
+D s-fretcb.ads		20160518112513 c6ca4fda system.freertos.tcb%s
+D s-memory.ads		20160518112912 59476bb6 system.memory%s
+D s-parame.ads		20160518111812 4b3ac6db system.parameters%s
+D s-secsta.ads		20160518154343 4e89dd04 system.secondary_stack%s
+D s-stoele.ads		20160108121556 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20160518111325 0bbd067f system.task_info%s
+D s-taskin.ads		20160518111009 f91959e2 system.tasking%s
+D s-tasres.ads		20160518111100 97ef7007 system.tasking.restricted%s
+D s-tarest.ads		20160517161620 0eb8c763 system.tasking.restricted.stages%s
+D s-tarest.adb		20160517163937 4413cb08 system.tasking.restricted.stages%b
+X 1 ada.ads
+16K9*Ada 19e8 18|40r6 65r16
+X 3 a-unccon.ads
+20v14*Unchecked_Conversion 18|40w10 65r20
+X 4 interfac.ads
+38K9*Interfaces 179e15 18|41w6
+X 5 system.ads
+54K9*System 180e11 17|51r6 52r6 54r9 59r23 60r23 61r23 64r23 153r5 18|42r6
+. 43r6 44r6 46r14 48r30 56r23 57r23 61r13 63r30 65r51 71r17 95r23 96r23 97r23
+. 100r23 111r36 112r9 114r44 122r38 130r12 133r50 164r5
+81M9*Address 17|59r30 64r30 18|48r37 56r30 63r37 65r58 95r30 100r30 114r51
+83m4*Null_Address{81M9} 18|122r45
+95V14*"="{boolean} 18|122r36
+120I12*Any_Priority{integer}
+121I12*Priority{120I12}
+126i4*Default_Priority{121I12} 18|133r57
+X 6 s-atacco.ads
+37+9 Object 18|61r51
+39k16*Address_To_Access_Conversions 63e41 18|42w13 61r20
+47P9*Object_Pointer(18|53R9) 18|67r42[60] 117r40[60]
+57V13*To_Pointer{47P9[18|60]} 18|68s31[60] 118s31[60]
+X 7 s-freert.ads
+23K16*FreeRTOS 49e20 18|43r13 75r7 120r16 136r9
+X 8 s-fretas.ads
+23K25*Tasks 113e26 18|120r25 136r18
+26R9*TCB
+27P9*Task_Handle(26R9) 18|120r31
+29P9*Task_Code
+33V13*Create_Task{27P9} 18|136s24
+34p7 Code{29P9} 18|137r12
+35a7 Name{string} 18|138r12
+36i7 Stack_Depth{natural} 18|139r12
+37m7 Parameters{5|81M9} 18|140r12
+38i7 Priority{5|120I12} 18|141r12
+X 9 s-fretcb.ads
+23K25*TCB 37e24 18|43w22 75r16
+35U14*Set_Application_Parameter 18|75s20
+X 10 s-memory.ads
+48K16*Memory 111e18 18|44w13 115r9
+57V13*Alloc{5|81M9} 107i<c,__gnat_malloc>22 18|115s16
+72U14*Free 108i<c,__gnat_free>22
+80V13*Realloc{5|81M9} 109i<c,__gnat_realloc>22
+X 11 s-parame.ads
+49K16*Parameters 76e22 17|51w13 60r30 18|57r30 96r30 111r43 112r16 130r19
+52I9*Size_Type<integer> 17|60r41 18|57r41 96r41 111r54
+63V13*Adjust_Storage_Size{52I9} 18|112s27
+72V13*Secondary_Stack_Size{52I9} 18|130s30
+X 12 s-secsta.ads
+38K16*Secondary_Stack 115e27 18|71r24
+48R9*Stack 109e14 18|71r40
+49P9*Stack_Ptr(48R9)
+X 14 s-tasinf.ads
+46K16*Task_Info 53e21 17|52w13 61r30 18|97r30
+49E9*Task_Info_Type 49e36 17|61r40 18|97r40
+X 15 s-taskin.ads
+45K16*Tasking 5|54k9 15|1223e19 17|54r16 153r12 18|46r21 164r12
+105P9*Task_Id(103R9) 17|68r23 18|54r23 65r42 104r23
+319R9*Entry_Call_Record
+320p7*Self{105P9} 18|143m31
+439R9*Activation_Chain 1207e14 17|66r30 18|102r30
+445P9*Activation_Chain_Access(439R9) 17|116r22 18|148r22
+447P9*Task_Procedure_Access 17|63r23 18|55r23 99r23
+449P9*Access_Boolean(boolean) 17|65r23 18|101r23
+519i7*Base_Priority{5|121I12} 18|132m27 141r47
+574p7*Thread{8|27P9} 18|135m27 144r45
+726r7*Common{506R9} 18|132m20 135m20 141r40 144r38
+729p7*Secondary_Stack{12|49P9} 18|78m14
+732r7*Entry_Call{319R9} 18|143m20
+781i4*Unspecified_Priority{integer} 18|132r59
+X 16 s-tasres.ads
+36K24*Restricted 15|45k16 16|38e30 17|54r24 153r20 18|46r29 164r20
+X 17 s-tarest.ads
+54K35*Stages 16|36k24 17|153l31 153e37 18|46b40 164l31 164t37
+57U14*Create_Restricted_Task 58>7 59>7 60>7 61>7 62>7 63>7 64>7 65>7 66=7
+. 67>7 68>7 18|93b14 145l8 145t30
+58i7 Priority{integer} 18|94b7 132r48 134r50
+59m7 Stack_Address{5|81M9} 18|95b7 106r28
+60i7 Size{11|52I9} 18|96b7 112r48
+61e7 Task_Info{14|49E9} 18|97b7 107r28
+62i7 CPU{integer} 18|98b7 108r28
+63p7 State{15|447P9} 18|99b7 127r27
+64m7 Discriminants{5|81M9} 18|100b7 128r27
+65p7 Elaborated{15|449P9} 18|101b7 144r7
+66r7 Chain{15|439R9} 18|102b7 109r28
+67a7 Task_Image{string} 18|103b7 138r27
+68p7 Created_Task{15|105P9} 18|104b7 126r27 132r7 135r7 141r27 143r7 143r39
+. 144r25
+115U14*Activate_Restricted_Tasks 116>7 18|147b14 152l8 152t33
+116p7 Chain_Access{15|445P9} 18|148b7 149r28
+136U14*Complete_Restricted_Activation 18|154b14 157l8 157t38
+145U14*Complete_Restricted_Task 18|159b14 162l8 162t32
+X 18 s-tarest.adb
+48U14 Wrapper 48>23 63b14 89l8 89t15 137r27
+48m23 Arg1{5|81M9} 63b23 68r43
+53R9 Parameters 58e14 61r61 115r23
+54p7*ATCB{15|105P9} 75r66 78r9 126m10
+55p7*Task_Proc{15|447P9} 83r9 127m10
+56m7*Discriminants{5|81M9} 83m22 128m10
+57i7*SStack_Size{11|52I9} 71r57 129m10
+60K12 Parameters_Conversion[6|39] 67r20 68r9 117r18 118r9
+64V16 Convert_Task_Id[3|20]{5|81M9} 75s47
+67p7 P{6|47P9[60]} 71r55 75r64 78r7 83r7 83r20
+70r7 Secondary_Stack{12|48R9} 78m33 78r33
+111i7 Actual_Stack_Size{11|52I9} 130r52 139r36
+114m7 Wrapper_Parameter_Address{5|81M9} 118r43 122r10 140r27
+116p7 Wrapper_Parameter_Access{6|47P9[60]} 125r7
+

@@ -1,0 +1,37 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/arduino-due/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U ada.containers%s	a-contai.ads		5e196e91 NE OL PU PK
+W ada%s			ada.ads			ada.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-contai.ads		20160108121556 61e5e089 ada.containers%s
+D system.ads		20160313164745 87bb3514 system%s
+X 1 ada.ads
+16K9*Ada 19e8 2|16r9 24r5
+X 2 a-contai.ads
+16K13*Containers 1|16k9 2|24l9 24e19
+19M9*Hash_Type
+20I9*Count_Type<integer>
+22X4*Capacity_Error
+

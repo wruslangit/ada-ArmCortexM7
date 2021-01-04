@@ -1,0 +1,130 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/arduino-due/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_LOOPS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U system.interrupts%b	s-interr.adb		c452f9b8 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.interrupts%s	a-interr.adb		a-interr.ali
+W ada.interrupts.names%s  a-intnam.ads		a-intnam.ali
+W ada.unchecked_conversion%s
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.machine_code%s	s-maccod.ads		s-maccod.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+U system.interrupts%s	s-interr.ads		964e53bd NE OL PR PK
+W system%s		system.ads		system.ali
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-except.ads		20160518112140 9a286512 ada.exceptions%s
+D a-interr.ads		20160108123626 89abd84a ada.interrupts%s
+D a-intnam.ads		20160108123626 f0fea1c3 ada.interrupts.names%s
+D a-unccon.ads		20160108121556 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-interr.ads		20160108123626 11f566a9 system.interrupts%s
+D s-interr.adb		20160301141557 baa47ba3 system.interrupts%b
+D s-maccod.ads		20160108121556 0fbb7bce system.machine_code%s
+D s-unstyp.ads		20160108121556 510692af system.unsigned_types%s
+X 1 ada.ads
+16K9*Ada 19e8 9|21r6 22r6 46r13
+X 3 a-interr.ads
+41K13*Interrupts 70e19 9|21r10
+X 4 a-intnam.ads
+24K24*Names 73e25 9|21w21
+X 5 a-unccon.ads
+20v14*Unchecked_Conversion 9|22w10 46r17
+X 6 interfac.ads
+38K9*Interfaces 179e15 9|23w6 68r14 141r14 144r16 148r21
+63M9*Unsigned_32 9|68r25 141r25 144r27 148r32
+X 7 system.ads
+54K9*System 180e11 8|21r9 24r42 25r6 62r5 9|24r6 26r14 28r52 32r19 36r27
+. 39r17 87r19 116r39 146r7 165r5
+81M9*Address 9|28r59 32r26 39r24 87r19
+83m4*Null_Address{81M9} 9|36r34
+120I12*Any_Priority{integer} 8|54r18 9|90r18
+123I12*Interrupt_Priority{120I12} 8|24r49 25r13 9|116r46
+X 8 s-interr.ads
+21K16*Interrupts 7|54k9 8|62l12 62e22 9|26b21 165l12 165t22
+24i4*Default_Interrupt_Priority{7|123I12}
+29I9*Interrupt_ID<short_short_integer> 32r35 45r19 9|35r32 142r12 154r13
+32I12*System_Interrupt_ID{29I9}
+38P9*Parameterless_Handler 46r19 9|46r39
+44R9*New_Handler_Item 47e14 50r59
+45i7*Interrupt{29I9} 9|104r56 106r38 109r35
+46p7*Handler{38P9} 9|103r31
+50A9*New_Handler_Array(44R9)<integer> 55r18 9|91r18
+53U14*Install_Restricted_Handlers 54>7 55>7 9|89b14 130l8 130t35
+54i7 Prio{7|120I12} 9|90b7 116r32
+55a7 Handlers{50A9} 9|91b7 100r16
+X 9 s-interr.adb
+28P9 Handler_Wrapper 28>46 31r19 40r17
+28m46 Obj{7|81M9}
+30R9 Handler_With_Parameter 33e14 35r49
+31p7*Wrapper{28P9} 106r49 157r34 162r31
+32m7*Parameter{7|81M9} 162m64
+35a4 Interrupt_Handlers(30R9) 106r16 109m13 157r10 162r7 162r40
+38R9 Parameterless_Handler_Impl 42e4 47r39 102r29
+39m7*Object{7|81M9} 109r69
+40p7*Wrapper{28P9} 109r55
+45V13 To_Impl_View[5|20]{38R9} 103s15
+52M9 Bits_1 55r41
+53M9 Bits_8 56r41 116r18
+55A9 Bits_32x1(52M9)<integer> 58r56 123r27
+56A9 Bits_32x8(53M9)<integer> 59r56 113r27
+58A9 Bits_32x1_Array(55A9)<integer> 62r14 63r14 64r14 65r14 66r14
+59A9 Bits_32x8_Array(56A9)<integer> 67r14
+61R9 NVIC_T 70e4 73r8 83r11
+62a7*ISER{58A9} 74r7 126m21
+63a7*ICER{58A9} 75r7
+64a7*ISPR{58A9} 76r7
+65a7*ICPR{58A9} 77r7
+66a7*IABR{58A9} 78r7
+67a7*IPR{59A9} 79r7 113r52 118m21
+68m7*STIR{6|63M9} 80r7
+83r4 NVIC{61R9} 113r47 118m16 126m16
+100r11 H=100:16{8|44R9} 103r29 104r54 106r36 109r33
+102r13 Impl{38R9} 109r50 109r64
+104i13 Interrupt{natural} 111r47 112r47 121r47 122r47
+111i16 Index{natural} 113r57 118r26
+112i16 Position{natural} 115r21
+113a16 IPR{56A9} 115m16 118r36
+121i16 Index{natural} 126r27
+122i16 Position{natural} 125r25
+123a16 Setting{55A9} 125m16 126r37
+137U14 IRQ_Handler 140b14 163l8 163t19
+141m7 IPSR{6|63M9} 148m62 148r62 154r27
+142i7 ID{8|29I9} 154m7 157r30 162r27 162r60
+X 10 s-maccod.ads
+36K16*Machine_Code 9|24w13 146r14 10|130e24
+44I9*Asm_Output_Operand<integer>
+82U14*Asm 9|146s27
+84i6 Outputs{44I9} 9|148r10
+87b6 Volatile{boolean} 9|149r10
+

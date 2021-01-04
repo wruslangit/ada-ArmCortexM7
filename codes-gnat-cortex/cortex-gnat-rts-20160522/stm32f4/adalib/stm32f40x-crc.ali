@@ -1,0 +1,65 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/stm32f4/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U stm32f40x.crc%s	stm32f40x-crc.ads	6a5ed55b NE OO PR PK
+W stm32f40x%s		stm32f40x.ads		stm32f40x.ali
+W system%s		system.ads		system.ali
+
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D stm32f40x.ads		20160422183910 63cbc99a stm32f40x%s
+D stm32f40x-crc.ads	20160422183911 8e2e29d5 stm32f40x.crc%s
+D system.ads		20160313164745 87bb3514 system%s
+X 1 interfac.ads
+57M9*Unsigned_8
+63M9*Unsigned_32
+X 2 stm32f40x.ads
+11K9*STM32F40x 231e14 3|9r9 20r29 27r23 41r27 48r23 65r13 83r5
+18M12*Word{1|63M9} 3|65r23
+20M12*Byte{1|57M9} 3|20r39
+21M9*Bit 3|41r37
+63M9*UInt24 3|27r33
+77M9*UInt31 3|48r33
+202m4*CRC_Base{4|81M9} 3|81r30
+X 3 stm32f40x-crc.ads
+9K19*CRC 2|11k9 3|83l15 83e18
+20M12*IDR_IDR_Field{2|20M12} 25r23
+23R9*IDR_Register 29e6 32r8 67r13
+25m7*IDR{20M12} 33r7
+27m7*Reserved_8_31{2|63M9} 34r7
+41M12*CR_CR_Field{2|21M9} 46r23
+44R9*CR_Register 50e6 53r8 69r13
+46m7*CR{41M12} 54r7
+48m7*Reserved_1_31{2|77M9} 55r7
+63R9*CRC_Peripheral 71e6 73r8 80r25
+65m7*DR{2|18M12} 74r7
+67r7*IDR{23R9} 75r7
+69r7*CR{44R9} 76r7
+80r4*CRC_Periph{63R9}
+X 4 system.ads
+54K9*System 3|7w6 30r24 51r24 4|180e11
+81M9*Address
+105n41*Low_Order_First{105E9} 3|30r31 51r31
+

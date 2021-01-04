@@ -1,0 +1,130 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/stm32f429i/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U system.freertos.tasks%b  s-fretas.adb		0d6672c9 NE OL PK
+W ada.exceptions%s	a-except.adb		a-except.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.freertos%s	s-freert.ads		s-freert.ali
+W system.machine_code%s	s-maccod.ads		s-maccod.ali
+
+U system.freertos.tasks%s  s-fretas.ads		03a8c93e NE OL PR PK
+W system.freertos%s	s-freert.ads		s-freert.ali
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-except.ads		20160518112140 9a286512 ada.exceptions%s
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-freert.ads		20160518111901 32bda127 system.freertos%s
+D s-fretas.ads		20160518112007 31156819 system.freertos.tasks%s
+D s-fretas.adb		20160108121556 5a65d0a7 system.freertos.tasks%b
+D s-maccod.ads		20160108121556 0fbb7bce system.machine_code%s
+X 3 interfac.ads
+38K9*Interfaces 179e15 7|21w6 59r30 79r29 119r14 120r16 124r21
+51I9*Integer_32<integer>
+60M9*Unsigned_16 7|59r41 79r40
+63M9*Unsigned_32 7|119r25 120r27 124r32
+X 4 system.ads
+54K9*System 180e11 6|23r9 29r56 37r21 38r21 47r51 51r33 113r5 7|22r6 24r14
+. 35r21 36r21 58r30 60r30 63r30 64r30 84r29 85r29 95r31 102r14 106r33 122r7
+. 143r5
+81M9*Address 6|29r63 37r28 7|35r28 58r37 60r37 63r37 64r37
+83m4*Null_Address{81M9} 7|84r36 85r36
+120I12*Any_Priority{integer} 6|38r28 47r58 51r40 7|36r28 95r38 102r21 106r40
+X 5 s-freert.ads
+23K16*FreeRTOS 4|54k9 5|49e20 6|23r16 113r12 7|24r21 143r12
+29I9*Base_Type<3|51I9> 7|130r46
+30M9*Unsigned_Base_Type<3|63M9> 7|61r30 82r29 96r59 108r50 115r41
+38I12*Status_Code{29I9} 7|65r16 71r16
+40i4*Fail{38I12} 7|71r31
+41i4*Pass{38I12} 7|87r20
+X 6 s-fretas.ads
+23K25*Tasks 5|23k16 6|110E9 113l21 113e26 7|24b30 143l21 143t26
+26R9*TCB 27r35 110c9
+27P9*Task_Handle(26R9) 39r22 47r31 50r33 54r35 60r27 7|37r22 62r30 72r16
+. 95r11 96r39 105r33 107r50
+29P9*Task_Code 29>49 34r21 7|32r21 57r30
+29m49 Arg1{4|81M9}
+33V13*Create_Task{27P9} 34>7 35>7 36>7 37>7 38>7 7|31b13 92l8 92t19
+34p7 Code{29P9} 7|32b7 77r29
+35a7 Name{string} 7|33b7 70r38
+36i7 Stack_Depth{natural} 7|34b7 80r16
+37m7 Parameters{4|81M9} 7|35b7 81r29
+38i7 Priority{4|120I12} 7|36b7 82r49
+47V13*Get_Priority{4|120I12} 47>27 7|94b13 103l8 103t20
+47p27 T{27P9} 7|95b7 102r54
+50U14*Set_Priority 50>28 51>28 7|105b14 116l8 116t20
+50p28 T{27P9} 7|105b28 114r41
+51i28 To{4|120I12} 7|106b28 115r61
+54U14*Resume 54>22
+54p22 T{27P9}
+60U14*Suspend 60>23
+60p23 T{27P9}
+67U14*Disable_Interrupts
+73U14*Enable_Interrupts
+79U14*Enter_Critical_Region
+85U14*Exit_Critical_Region
+91V13*In_ISR{boolean} 7|118b13 127l8 127t14
+93U14*Yield_From_ISR 93>30
+93i30 Higher_Priority_Task_Woken{integer}
+99V13*Scheduler_Is_Running{boolean} 7|129b13 141l8 141t28
+101U14*Start_Scheduler
+X 7 s-fretas.adb
+29N4 Stack_Unit_Size 80r30 80r53
+56V16*xTaskGenericCreate{5|38I12} 57>10 58>10 59>10 60>10 61>10 62<10 63>10
+. 64>10 76s9
+57p10 Code{6|29P9} 77r12
+58m10 Name{4|81M9} 78r12
+59m10 Stack_Depth{3|60M9} 79r12
+60m10 Parameters{4|81M9} 81r12
+61m10 Priority{5|30M9} 82r12
+62p10 Created_Task{6|27P9} 83r12
+63m10 Stack_Buffer{4|81M9} 84r12
+64m10 Memory_Region{4|81M9} 85r12
+70a7 Task_Name=70:43{string} 78r29 78r40
+71i7 Status{5|38I12} 75m7 87r10
+72p7 Result{6|27P9} 83m29 83r29 91r14
+96V16*uxTaskPriorityGet{5|30M9} 96>35 102s35
+96p35 T{6|27P9}
+107U17*vTaskPrioritySet 107>35 108>35 114s7
+107p35 T{6|27P9} 114r25
+108m35 New_Priority{5|30M9} 115r25
+119m7 IPSR{3|63M9} 124m62 124r62 126r15
+130V16*XTaskGetSchedulerState{5|29I9} 140s14
+X 8 s-maccod.ads
+36K16*Machine_Code 7|22w13 122r14 8|130e24
+44I9*Asm_Output_Operand<integer>
+82U14*Asm 7|122s27
+84i6 Outputs{44I9} 7|124r10
+87b6 Volatile{boolean} 7|125r10
+

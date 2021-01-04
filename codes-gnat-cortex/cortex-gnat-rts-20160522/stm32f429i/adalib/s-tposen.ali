@@ -1,0 +1,176 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/stm32f429i/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U system.tasking.protected_objects.single_entry%b  s-tposen.adb  b52cabed NE OL PK
+W ada.exceptions%s	a-except.adb		a-except.ali
+W system%s		system.ads		system.ali
+W system.freertos%s	s-freert.ads		s-freert.ali
+W system.freertos.tasks%s  s-fretas.adb		s-fretas.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+U system.tasking.protected_objects.single_entry%s  s-tposen.ads  def7a6bb NE OL PR PK
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-except.ads		20160518112140 9a286512 ada.exceptions%s
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-freert.ads		20160518111901 32bda127 system.freertos%s
+D s-fresem.ads		20160518112419 1462afb8 system.freertos.semaphores%s
+D s-fretas.ads		20160518112007 31156819 system.freertos.tasks%s
+D s-parame.ads		20160518111812 4b3ac6db system.parameters%s
+D s-secsta.ads		20160518154343 4e89dd04 system.secondary_stack%s
+D s-stoele.ads		20160108121556 2dc34a04 system.storage_elements%s
+D s-taskin.ads		20160518111009 f91959e2 system.tasking%s
+D s-taprob.ads		20160518110817 6eff6b97 system.tasking.protected_objects%s
+D s-tposen.ads		20160517142340 b008cd2c system.tasking.protected_objects.single_entry%s
+D s-tposen.adb		20160517165457 34310ed8 system.tasking.protected_objects.single_entry%b
+X 3 interfac.ads
+51I9*Integer_32<integer>
+63M9*Unsigned_32
+X 4 system.ads
+54K9*System 180e11 13|62r9 78r27 118r29 164r23 180r5 14|36r6 38r14 70r27
+. 100r29 216r11 324r5
+81M9*Address 13|78r34 118r36 164r30 14|70r34 100r36
+X 5 s-freert.ads
+23K16*FreeRTOS 49e20 14|36r13 216r18 315r13
+29I9*Base_Type<3|51I9> 14|262r49 268r30
+30M9*Unsigned_Base_Type<3|63M9> 14|222r28 223r28
+32M12*Tick_Type{30M9} 14|241r36 286r33
+34m4*Max_Delay{32M12} 14|298r32
+38I12*Status_Code{29I9} 14|241r54 247r19 262r67 269r19 286r51 292r19
+41i4*Pass{38I12} 14|253r23 276r23 299r23
+X 7 s-fretas.ads
+23K25*Tasks 113e26 14|36w22 279r10 315r22
+91V13*In_ISR{boolean} 14|315s28
+93U14*Yield_From_ISR 14|279s16
+X 11 s-taskin.ads
+45K16*Tasking 4|54k9 11|1223e19 13|62r16 180r12 14|38r21 324r12
+105P9*Task_Id(103R9) 13|134r41 14|101r29 169r41
+114V13*Self{105P9} 14|101s40
+239R9*Entry_Call_Record 346e14 14|102r20
+241P9*Entry_Call_Link(239R9) 13|167r26 173r21 14|175r29
+319R9*Entry_Call_Record
+320p7*Self{105P9} 14|171r38
+340m7*Uninterpreted_Data{4|81M9} 14|114m18 128m46 189m49
+553i7*Protected_Action_Nesting{natural} 14|107r25
+726r7*Common{506R9} 14|107r18
+732r7*Entry_Call{319R9} 14|102m54
+X 12 s-taprob.ads
+55K24*Protected_Objects 11|45k16 12|249e37 13|62r24 180r20 14|38r29 324r20
+136P9*Barrier_Function_Pointer(boolean)
+146P9*Entry_Action_Pointer
+158p7*Barrier{136P9} 14|117r28 178r31
+159p7*Action{146P9} 14|127r28 188r31
+164P9*Entry_Body_Access(157R9) 13|79r27 170r20 14|71r27
+166R9*Protection 242e14 13|160r24
+184U14*Initialize_Protection 14|74s7
+190U14*Lock 14|85s7
+196U14*Lock_Read_Only 14|90s7
+209U14*Unlock 14|208s7
+X 13 s-tposen.ads
+62K42*Single_Entry 12|55k24 13|156E9 180l38 180e50 14|38b47 324l38 324t50
+68R9*Protection_Entry 73r47 130r45 134r16 159c9 178e14 14|93r45 169r16
+73P9*Protection_Entry_Access(68R9) 76r27 83r35 90r16 98r37 106r38 117r29
+. 14|59r33 60r34 68r27 83r35 88r45 99r29 174r38 206r37 308r33 313r34
+75U14*Initialize_Protection_Entry 76>7 77>7 78>7 79>7 14|67b14 81l8 81t35
+76p7 Object{73P9} 14|68b7 74r30 76r7 77r7 78r7 79r7 80r7
+77i7 Ceiling_Priority{integer} 14|69b7 74r52
+78m7 Compiler_Info{4|81M9} 14|70b7 76r31
+79p7 Entry_Body{12|164P9} 14|71b7 78r28
+83U14*Lock_Entry 83>26 14|83b14 86l8 86t18 111s7
+83p26 Object{73P9} 14|83b26 85r13
+89U14*Lock_Read_Only_Entry 90>7 14|88b14 91l8 91t28
+90p7 Object{73P9} 14|88b36 90r23
+98U14*Unlock_Entry 98>28 14|131s10 141s10 191s13 197s13 202s10 206b14 209l8
+. 209t20
+98p28 Object{73P9} 14|206b28 208r15
+106U14*Service_Entry 106>29 14|174b14 204l8 204t21
+106p29 Object{73P9} 14|174b29 175r48 178r13 178r40 179r13 181r16 187r13 188r13
+. 189r16 190r13 191r27 193r37 197r27 202r24
+116U14*Protected_Single_Entry_Call 117>7 118>7 14|98b14 166l8 166t35
+117p7 Object{73P9} 14|99b7 111r19 117r10 117r37 119r13 126r10 127r10 128r13
+. 129r10 131r24 133r13 140r10 141r24 143r33
+118m7 Uninterpreted_Data{4|81M9} 14|100b7 114r40
+130V13*Protected_Count_Entry{natural} 130>36 14|93b13 96l8 96t29
+130r36 Object{68R9} 14|93b36 95r18
+133V13*Protected_Single_Entry_Caller{11|105P9} 134>7 14|168b13 172l8 172t37
+134r7 Object{68R9} 14|169b7 171r14
+156R9 Queue 157r36
+157P9 Queue_Handle(156R9) 176r23 14|46r39 48r37 51r46 53r39 220r39 223r55
+. 228r28 237r37 239r36 258r46 260r49 282r39 284r33
+160r7*Common{12|166R9} 14|74m37 85m20 90m30 208m22
+164m7*Compiler_Info{4|81M9} 14|76m14 117m44 128m20 178m47 189m23
+167p7*Call_In_Progress{11|241P9} 14|77m14 119r20 126m17 129m17 171r21 181r23
+. 187m20 190m20
+170p7*Entry_Body{12|164P9} 14|78m14 117r17 127r17 178r20 188r20
+173p7*Entry_Queue{11|241P9} 14|79m14 95r25 133r20 140m17 175r55 179m20
+176p7*Barrier_Queue{157P9} 14|80m14 310r38 316r56 318r47
+X 14 s-tposen.adb
+44K12 Barrier_Queues 56l8 56e22 80r31 215b17 304l8 304t22 310r10 316r13 318r13
+46V16*Create{13|157P9} 80s46 220b16 235l11 235t17
+48U17*Send 48>23 237b17 256l11 256t15 318s28
+48p23 To{13|157P9} 237b23 250r41 318r34
+51U17*Send_From_ISR 51>32 258b17 280l11 280t24 316s28
+51p32 To{13|157P9} 258b32 273r45 316r43
+53U17*Read 53>23 282b17 302l11 302t15 310s25
+53p23 From{13|157P9} 282b23 296r32
+58K12 Task_Operations 61l8 61e23 143r10 193r13 306b17 322l8 322t23
+59U17*Sleep 59>24 143s26 308b17 311l11 311t16
+59p24 Object{13|73P9} 308b24 310r31
+60U17*Wakeup 60>25 193s29 313b17 320l11 320t17
+60p25 Object{13|73P9} 313b25 316r49 318r40
+101p7 Self_Id{11|105P9} 102r46 107r10
+102r7 Entry_Call{11|319R9} 114r7 126r37 128r35 140r32
+175p7 Entry_Call{11|241P9} 177r10 187r40 189r38
+218R12 Item 240r36 246r33 261r49 267r33 285r33 291r19
+221V19*xQueueCreate{13|157P9} 222>13 223>13 228s44
+222m13 Queue_Length{5|30M9} 228r58
+223m13 Item_Size{5|30M9} 229r58
+228p10 Result{13|157P9} 231r13 234r17
+238V19*xQueueSend{5|38I12} 239>13 240^13 241>13 250s12
+239p13 Queue{13|157P9} 250r24
+240p13 Item_To_Queue(218R12) 251r24
+241m13 Ticks_To_Wait{5|32M12} 252r24
+246r10 Item_To_Pass{218R12} 251m41 251r41
+247i10 Status{5|38I12} 249m10 253r13
+259V19*xQueueSendFromISR{5|38I12} 260>13 261^13 262<13 272s12
+260p13 Queue{13|157P9} 273r15
+261p13 Item_To_Queue(218R12) 274r15
+262i13 Higher_Priority_Task_Woken{5|29I9} 275r15
+267r10 Item_To_Pass{218R12} 274m45 274r45
+268i10 Task_Needs_Waking{5|29I9} 275m45 275r45 279r41
+269i10 Status{5|38I12} 271m10 276r13
+283V19*XQueueReceive{5|38I12} 284>13 285<13 286>13 295s12
+284p13 Queue{13|157P9} 296r15
+285r13 Buffer{218R12} 297r15
+286m13 Ticks_To_Wait{5|32M12} 298r15
+291r10 Result{218R12} 297m32 297r32
+292i10 Status{5|38I12} 294m10 299r13
+

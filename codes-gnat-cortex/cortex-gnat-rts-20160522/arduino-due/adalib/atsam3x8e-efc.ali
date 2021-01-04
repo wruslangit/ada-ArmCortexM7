@@ -1,0 +1,108 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/arduino-due/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U atsam3x8e.efc%s	atsam3x8e-efc.ads	7c15510a NE OO PR PK IU
+W atsam3x8e%s		atsam3x8e.ads		atsam3x8e.ali
+W system%s		system.ads		system.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D atsam3x8e.ads		20160325164151 de751321 atsam3x8e%s
+D atsam3x8e-efc.ads	20160325164151 25db773f atsam3x8e.efc%s
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-unstyp.ads		20160108121556 510692af system.unsigned_types%s
+X 1 atsam3x8e.ads
+12K9*ATSAM3X8E 162e14 2|9r9 20r30 21r29 22r30 23r29 30r24 34r24 38r24 42r24
+. 112r30 149r30 150r31 151r32 162r23 186r13 205r5
+19M12*Word{3|63M9} 2|186r23
+20M12*Short{3|60M9} 2|112r40
+22M9*Bit 2|20r40 22r40 23r39 149r40 150r41 151r42
+28M9*UInt4 2|21r39 34r34
+34M9*UInt7 2|30r34 38r34 42r34
+74M9*UInt29 2|162r33
+137m4*EFC0_Base{4|81M9} 2|199r30
+139m4*EFC1_Base{4|81M9} 2|203r30
+X 2 atsam3x8e-efc.ads
+9K19*EFC 1|12k9 2|205l15 205e18
+20M12*FMR_FRDY_Field{1|22M9} 28r24
+21M12*FMR_FWS_Field{1|28M9} 32r24
+22M12*FMR_SCOD_Field{1|22M9} 36r24
+23M12*FMR_FAM_Field{1|22M9} 40r24
+26R9*FMR_Register 44e6 46r8 180r13
+28m7*FRDY{20M12} 47r7
+30m7*Reserved_1_7{1|34M9} 48r7
+32m7*FWS{21M12} 49r7
+34m7*Reserved_12_15{1|28M9} 50r7
+36m7*SCOD{22M12} 51r7
+38m7*Reserved_17_23{1|34M9} 52r7
+40m7*FAM{23M12} 53r7
+42m7*Reserved_25_31{1|34M9} 54r7
+62E9*FCMD_Field 94e6 95r8 131r14
+65n7*Getd{62E9} 96r7 131r28
+67n7*Wp{62E9} 97r7
+69n7*Wpl{62E9} 98r7
+71n7*Ewp{62E9} 99r7
+73n7*Ewpl{62E9} 100r7
+75n7*Ea{62E9} 101r7
+77n7*Slb{62E9} 102r7
+79n7*Clb{62E9} 103r7
+81n7*Glb{62E9} 104r7
+83n7*Sgpb{62E9} 105r7
+85n7*Cgpb{62E9} 106r7
+87n7*Ggpb{62E9} 107r7
+89n7*Stui{62E9} 108r7
+91n7*Spui{62E9} 109r7
+93n7*Gcalb{62E9} 110r7
+112M12*FCR_FARG_Field{1|20M12} 133r14
+115E9*FKEY_Field 123e6 124r8 135r14
+118n7*Fkey_Field_Reset{115E9} 125r7 135r28
+122n7*Passwd{115E9} 126r7
+129R9*FCR_Register 137e6 139r8 182r13
+131e7*FCMD{62E9} 140r7
+133m7*FARG{112M12} 141r7
+135e7*FKEY{115E9} 142r7
+149M12*FSR_FRDY_Field{1|22M9} 156r23
+150M12*FSR_FCMDE_Field{1|22M9} 158r23
+151M12*FSR_FLOCKE_Field{1|22M9} 160r23
+154R9*FSR_Register 164e6 166r8 184r13
+156m7*FRDY{149M12} 167r7
+158m7*FCMDE{150M12} 168r7
+160m7*FLOCKE{151M12} 169r7
+162m7*Reserved_3_31{1|74M9} 170r7
+178R9*EFC_Peripheral 188e6 190r8 198r26 202r26
+180r7*FMR{26R9} 191r7
+182r7*FCR{129R9} 192r7
+184r7*FSR{154R9} 193r7
+186m7*FRR{1|19M12} 194r7
+198r4*EFC0_Periph{178R9}
+202r4*EFC1_Periph{178R9}
+X 3 interfac.ads
+60M9*Unsigned_16
+63M9*Unsigned_32
+X 4 system.ads
+54K9*System 2|7w6 44r46 137r46 164r46 4|180e11
+81M9*Address
+105n41*Low_Order_First{105E9} 2|44r53 137r53 164r53
+

@@ -1,0 +1,209 @@
+Ub2004-rt38:~/Downloads$ date
+Mon 04 Jan 2021 10:40:10 PM +08
+
+Ub2004-rt38:~/Downloads$ uname -a
+Linux HPEliteBook8470p-Ub2004-rt38 5.4.66-rt38 
+#1 SMP PREEMPT_RT Sat Sep 26 16:51:59 +08 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+Ub2004-rt38:~/Downloads$ lsb_release -a
+LSB Version:	core-11.1.0ubuntu2-noarch:security-11.1.0ubuntu2-noarch
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.1 LTS
+Release:	20.04
+Codename:	focal
+Ub2004-rt38:~/Downloads$ 
+
+===========================================================
+GNAT ARM-ELF COMPILER
+===========================================================
+The GNAT cross-compiler that can compile Ada code and produce executables for ARM
+URL for download: https://www.adacore.com/download
+
+gnat-2020-20200429-arm-elf-linux64-bin
+SHA-1: 2b8ddb644a06808e7d2c6b62edf16d31b02f514f
+
+Ub2004-rt38:~/Downloads$ ls -al
+-rw-rw-r--  1 wruslan wruslan 207274499 Jan  4 22:36 gnat-2020-20200429-arm-elf-linux64-bin
+-rw-rw-r--  1 wruslan wruslan      3510 Jan  4 22:37 README.txt
+Ub2004-rt38:~/Downloads$ 
+
+CHECK SHA-1
+===========================================================
+The sha1sum command computes the SHA-1 message digest of a file. This allows 
+it be compared to a published message digest to check whether the file is 
+unmodified from the original. As such the sha1sum command can be used to 
+attempt to verify the integrity of a file. SHA-1 produces a 160-bit (20 byte) 
+hash value known as a message digest. Although SHA-1 is no longer considered 
+secure against well funded opponents it is still widely used to verify files.
+
+Ub2004-rt38:~/Downloads$ which sha1sum
+/usr/bin/sha1sum
+
+Ub2004-rt38:~/Downloads$ sha1sum gnat-2020-20200429-arm-elf-linux64-bin
+2b8ddb644a06808e7d2c6b62edf16d31b02f514f  gnat-2020-20200429-arm-elf-linux64-bin
+Ub2004-rt38:~/Downloads$ 
+
+COMPARE SHA-1 GIVES SAME VALUE.
+
+2b8ddb644a06808e7d2c6b62edf16d31b02f514f  gnat-2020-20200429-arm-elf-linux64-bin
+2b8ddb644a06808e7d2c6b62edf16d31b02f514f  published at website
+
+INSTALLATION /home/wruslan/opt/GNAT/2020-arm-elf
+===========================================================
+Ub2004-rt38:~/Downloads$ chmod +x gnat-2020-20200429-arm-elf-linux64-bin
+
+Ub2004-rt38:~/Downloads$ ./gnat-2020-20200429-arm-elf-linux64-bin 
+Ub2004-rt38:~/Downloads$ 
+
+Ub2004-rt38:~/Downloads$ ls -al ~/opt/GNAT
+total 20
+drwxrwxr-x  5 wruslan wruslan 4096 Jan  4 22:53 .
+drwxrwxr-x 29 wruslan wruslan 4096 Dec 29 15:10 ..
+drwxrwxr-x 11 wruslan wruslan 4096 Apr 12  2020 2018
+drwxrwxr-x 12 wruslan wruslan 4096 Oct 19 16:26 2020
+drwxrwxr-x 10 wruslan wruslan 4096 Jan  4 22:56 2020-arm-elf
+
+Ub2004-rt38:~/Downloads$ ls -al ~/opt/GNAT/2020-arm-elf/
+total 38768
+drwxrwxr-x 10 wruslan wruslan     4096 Jan  4 22:56 .
+drwxrwxr-x  5 wruslan wruslan     4096 Jan  4 22:53 ..
+drwxr-xr-x 46 wruslan wruslan     4096 Jan  4 22:53 arm-eabi
+drwxr-xr-x  2 wruslan wruslan     4096 Jan  4 22:53 bin
+-rw-rw-r--  1 wruslan wruslan      881 Jan  4 22:53 components.xml
+-rwxr-xr-x  1 wruslan wruslan       14 Apr 30  2020 config.guess
+-rw-r--r--  1 wruslan wruslan    18002 Feb 28  2020 COPYING
+-rw-r--r--  1 wruslan wruslan    35147 Feb 28  2020 COPYING3
+drwxr-xr-x  3 wruslan wruslan     4096 Jan  4 22:53 include
+-rw-rw-r--  1 wruslan wruslan     5950 Jan  4 22:56 InstallationLog.txt
+drwxr-xr-x  8 wruslan wruslan     4096 Jan  4 22:53 lib
+drwxr-xr-x  2 wruslan wruslan     4096 Jan  4 22:53 lib64
+drwxr-xr-x  5 wruslan wruslan     4096 Jan  4 22:53 libexec
+drwxrwxr-x  2 wruslan wruslan     4096 Jan  4 22:53 Licenses
+-rwxr-xr-x  1 wruslan wruslan 27173296 Jan  4 22:53 maintenancetool
+-rw-r--r--  1 wruslan wruslan 12393137 Jan  4 22:53 maintenancetool.dat
+-rw-rw-r--  1 wruslan wruslan     3468 Jan  4 22:53 maintenancetool.ini
+-rw-r--r--  1 wruslan wruslan     2272 Apr 30  2020 Makefile
+-rw-rw-r--  1 wruslan wruslan      362 Jan  4 22:53 network.xml
+drwxr-xr-x  9 wruslan wruslan     4096 Jan  4 22:53 share
+
+Ub2004-rt38:~/Downloads$ ls -al ~/opt/GNAT/2020-arm-elf/bin
+total 233740
+drwxr-xr-x  2 wruslan wruslan     4096 Jan  4 22:53 .
+drwxrwxr-x 10 wruslan wruslan     4096 Jan  4 22:56 ..
+-rwxr-xr-x  1 wruslan wruslan  5546920 Apr 30  2020 arm-eabi-addr2line
+-rwxr-xr-x  1 wruslan wruslan  5785936 Apr 30  2020 arm-eabi-ar
+-rwxr-xr-x  1 wruslan wruslan  8818352 Apr 30  2020 arm-eabi-as
+-rwxr-xr-x  1 wruslan wruslan  5495784 Apr 30  2020 arm-eabi-c++filt
+-rwxr-xr-x  1 wruslan wruslan  1255912 Apr 30  2020 arm-eabi-cpp
+-rwxr-xr-x  1 wruslan wruslan   264800 Apr 30  2020 arm-eabi-elfedit
+-rwxr-xr-x  1 wruslan wruslan  1255912 Apr 30  2020 arm-eabi-gcc
+-rwxr-xr-x  1 wruslan wruslan  1255912 Apr 30  2020 arm-eabi-gcc-9.3.1
+-rwxr-xr-x  1 wruslan wruslan    27080 Apr 30  2020 arm-eabi-gcc-ar
+-rwxr-xr-x  1 wruslan wruslan    27080 Apr 30  2020 arm-eabi-gcc-nm
+-rwxr-xr-x  1 wruslan wruslan    27080 Apr 30  2020 arm-eabi-gcc-ranlib
+-rwxr-xr-x  1 wruslan wruslan 11413128 Apr 30  2020 arm-eabi-gdb
+-rwxr-xr-x  1 wruslan wruslan     4045 Apr 30  2020 arm-eabi-gdb-add-index
+-rwxr-xr-x  1 wruslan wruslan  1348240 Apr 30  2020 arm-eabi-gnat
+-rwxr-xr-x  1 wruslan wruslan  2548448 Apr 30  2020 arm-eabi-gnatbind
+-rwxr-xr-x  1 wruslan wruslan  1639776 Apr 30  2020 arm-eabi-gnatchop
+-rwxr-xr-x  1 wruslan wruslan  7540400 Apr 30  2020 arm-eabi-gnatemu
+-rwxr-xr-x  1 wruslan wruslan  1611056 Apr 30  2020 arm-eabi-gnatfind
+-rwxr-xr-x  1 wruslan wruslan  1270056 Apr 30  2020 arm-eabi-gnatkr
+-rwxr-xr-x  1 wruslan wruslan  2264240 Apr 30  2020 arm-eabi-gnatls
+-rwxr-xr-x  1 wruslan wruslan 20420224 Apr 30  2020 arm-eabi-gnatmetric
+-rwxr-xr-x  1 wruslan wruslan  2066520 Apr 30  2020 arm-eabi-gnatname
+-rwxr-xr-x  1 wruslan wruslan 20876480 Apr 30  2020 arm-eabi-gnatpp
+-rwxr-xr-x  1 wruslan wruslan  2144720 Apr 30  2020 arm-eabi-gnatprep
+-rwxr-xr-x  1 wruslan wruslan 20970912 Apr 30  2020 arm-eabi-gnatstub
+-rwxr-xr-x  1 wruslan wruslan  1606960 Apr 30  2020 arm-eabi-gnatxref
+-rwxr-xr-x  1 wruslan wruslan  6212576 Apr 30  2020 arm-eabi-gprof
+-rwxr-xr-x  1 wruslan wruslan  8212168 Apr 30  2020 arm-eabi-ld
+-rwxr-xr-x  1 wruslan wruslan  8212168 Apr 30  2020 arm-eabi-ld.bfd
+-rwxr-xr-x  1 wruslan wruslan  5597176 Apr 30  2020 arm-eabi-nm
+-rwxr-xr-x  1 wruslan wruslan  6493352 Apr 30  2020 arm-eabi-objcopy
+-rwxr-xr-x  1 wruslan wruslan  8729568 Apr 30  2020 arm-eabi-objdump
+-rwxr-xr-x  1 wruslan wruslan  5785928 Apr 30  2020 arm-eabi-ranlib
+-rwxr-xr-x  1 wruslan wruslan  3136808 Apr 30  2020 arm-eabi-readelf
+-rwxr-xr-x  1 wruslan wruslan  5540008 Apr 30  2020 arm-eabi-size
+-rwxr-xr-x  1 wruslan wruslan  5533768 Apr 30  2020 arm-eabi-strings
+-rwxr-xr-x  1 wruslan wruslan  6493352 Apr 30  2020 arm-eabi-strip
+-rwxr-xr-x  1 wruslan wruslan    32143 Feb 28  2020 gnathtml.pl
+-rwxr-xr-x  1 wruslan wruslan  7325664 Apr 30  2020 gprbuild
+-rwxr-xr-x  1 wruslan wruslan  6259328 Apr 30  2020 gprclean
+-rwxr-xr-x  1 wruslan wruslan  5101408 Apr 30  2020 gprconfig
+-rwxr-xr-x  1 wruslan wruslan  6081256 Apr 30  2020 gprinstall
+-rwxr-xr-x  1 wruslan wruslan  5200256 Apr 30  2020 gprls
+-rwxr-xr-x  1 wruslan wruslan  5733568 Apr 30  2020 gprname
+-rwxr-xr-x  1 wruslan wruslan  6094168 Apr 30  2020 gprslave
+Ub2004-rt38:~/Downloads$ 
+
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+
+Ub2004-rt38:~/Downloads$ sudo updatedb
+[sudo] password for wruslan: 
+
+Ub2004-rt38:~/Downloads$ locate arm-eabi-gcc
+/home/wruslan/opt/GNAT/2020-arm-elf/bin/arm-eabi-gcc
+/home/wruslan/opt/GNAT/2020-arm-elf/bin/arm-eabi-gcc-9.3.1
+/home/wruslan/opt/GNAT/2020-arm-elf/bin/arm-eabi-gcc-ar
+/home/wruslan/opt/GNAT/2020-arm-elf/bin/arm-eabi-gcc-nm
+/home/wruslan/opt/GNAT/2020-arm-elf/bin/arm-eabi-gcc-ranlib
+/home/wruslan/opt/GNAT/2020-arm-elf/share/man/man1/arm-eabi-gcc.1
+Ub2004-rt38:~/Downloads$ 
+
+===========================================================
+LINKER
+Ub2004-rt38:~/Downloads$ which ld
+/usr/bin/ld
+
+NAME INSPECTOR
+Ub2004-rt38:~/Downloads$ which nm
+/usr/bin/nm
+
+OBJECT COPY 
+Ub2004-rt38:~/Downloads$ which objcopy
+/usr/bin/objcopy
+
+OBJECT DUMP
+Ub2004-rt38:~/Downloads$ which od
+/usr/bin/od
+
+LOADER
+For Arduino Due the loader is called bossa.
+Ub2004-rt38:~/Downloads$ which bossa
+/usr/bin/bossa
+
+LOADER
+For Nucleo boards, OpenOCD utility to upload executable images to target board
+Ub2004-rt38:~/Downloads$ which openocd
+/usr/bin/openocd
+
+VERSIONS
+===========================================================
+Ub2004-rt38:~/Downloads$ ld --version
+GNU ld (GNU Binutils for Ubuntu) 2.34
+
+Ub2004-rt38:~/Downloads$ nm --version
+GNU nm (GNU Binutils for Ubuntu) 2.34
+
+Ub2004-rt38:~/Downloads$ objcopy --version
+GNU objcopy (GNU Binutils for Ubuntu) 2.34
+
+Ub2004-rt38:~/Downloads$ od --version
+od (GNU coreutils) 8.30
+
+Ub2004-rt38:~/Downloads$ bossa --version
+Ver 1.9.1 (2018) GUI
+
+Ub2004-rt38:~/Downloads$ openocd --version
+Open On-Chip Debugger 0.10.0
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+

@@ -1,0 +1,162 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/arduino-due/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB SS
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_LOOPS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U interfaces.c.strings%b  i-cstrin.adb		7008f090 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.unchecked_conversion%s
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+U interfaces.c.strings%s  i-cstrin.ads		449505f7 NE OL PR PK
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-except.ads		20160518112140 9a286512 ada.exceptions%s
+D a-unccon.ads		20160108121556 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D i-c.ads		20160108121556 a5379bc9 interfaces.c%s
+D i-cstrin.ads		20160108130318 e1a29e3e interfaces.c.strings%s
+D i-cstrin.adb		20160108130255 c2399eb8 interfaces.c.strings%b
+D system.ads		20160313164745 87bb3514 system%s
+D s-parame.ads		20160518111812 4b3ac6db system.parameters%s
+D s-secsta.ads		20160518154343 4e89dd04 system.secondary_stack%s
+D s-stoele.ads		20160108121556 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20160108121556 ed88f8fb system.storage_elements%b
+X 1 ada.ads
+16K9*Ada 19e8 7|37r6 49r11 52r11
+X 3 a-unccon.ads
+20v14*Unchecked_Conversion 7|37w10 49r15 52r15
+X 4 interfac.ads
+38K9*Interfaces 179e15 6|38r9 106r5 7|39r14 364r5
+X 5 i-c.ads
+19K20*C 4|38k9 5|234e17 6|38r20 106r16 7|39r25 364r16
+62M9*size_t 6|52r35 72r16 78r16 80r46 84r16 90r16 7|66r44 70r56 76r34 86r44
+. 110r17 135r39 157r15 190r56 205r46 206r20 248r16 261r27 267r16 304r16 340r47
+74E9*char<character> 7|58r44 62r28 172r44 174r14 181r28
+76e4*nul{74E9} 7|135r16 193r24 214r40 326r29 355r26 360r26
+81A9*char_array(74E9)<62M9> 6|41r41 60r37 68r45 72r31 85r16 7|70r37 109r37
+. 153r22 190r37 249r16 285r45 286r16 304r31 320r19 341r16
+86V13*To_C{81A9} 7|278s29
+88b7 Append_Nul{boolean} 7|278r40
+90V13*To_Ada{string} 7|337s14 356s20 361s14
+94U14*To_C 7|160s7
+95a7 Item{string} 7|161r10
+96a7 Target{81A9} 7|162r10
+97m7 Count{62M9} 7|163r10
+98b7 Append_Nul{boolean} 7|164r10
+232X4*Terminator_Error 7|236r16
+X 6 i-cstrin.ads
+38K22*Strings 5|19k20 6|97E9 106l18 106e25 7|39b27 364l18 364t25
+41P9*char_array_access(5|81A9) 42r8 44r31 57r19 7|227r19
+49P9*chars_ptr 50r41 52r63 54r24 58r44 60r56 62r46 64r34 68r27 71r16 74r27
+. 77r16 80r28 83r16 89r16 97c9 98r8 100r31 105r24 7|49r48 52r37 58r26 62r41
+. 66r25 66r59 76r49 79r37 86r25 86r59 95r34 109r56 111r17 145r46 151r25 172r26
+. 181r41 205r28 228r44 247r16 252r15 266r16 285r27 303r16 335r27 340r27
+52A9*chars_ptr_array(49P9)<5|62M9>
+54p4*Null_Ptr{49P9} 105c4 7|97r17 102r15 209r17 232r17 289r17 307r17 348r17
+56V13*To_Chars_Ptr{49P9} 57>7 58>7 7|226b13 240l8 240t20
+57p7 Item{41P9} 7|227b7 231r10 234r43 234r55 238r31 238r37
+58b7 Nul_Check{boolean} 7|228b7 233r13
+60V13*New_Char_Array{49P9} 60>29 7|109b13 139l8 139t22
+60a29 Chars{5|81A9} 7|109b29 117r41 118r41 122r19 125r28 125r35 133r28 135r47
+62V13*New_String{49P9} 62>25 7|145b13 166l8 166t18
+62a25 Str{string} 7|145b25 151r52 153r40 161r24
+64U14*Free 64=20 7|95b14 103l8 103t12
+64p20 Item{49P9} 7|95b20 97r10 101r20 102m7
+66X4*Dereference_Error 7|210r16 290r16 308r16 349r16
+68V13*Value{5|81A9} 68>20 7|285b13 300l8 300t13 337s22
+68p20 Item{49P9} 7|285b20 286r41 289r10 296r30
+70V13*Value{5|81A9} 71>7 72>7 7|302b13 333l8 333t13
+71p7 Item{49P9} 7|303b7 307r10 324r33
+72m7 Length{5|62M9} 7|304b7 315r10 320r36
+74V13*Value{string} 74>20 7|335b13 338l8 338t13
+74p20 Item{49P9} 7|335b20 337r29
+76V13*Value{string} 77>7 78>7 7|340b13 362l8 362t13
+77p7 Item{49P9} 7|340b20 348r10 353r30
+78m7 Length{5|62M9} 7|340b38 341r33 352r21 360r15
+80V13*Strlen{5|62M9} 80>21 7|205b13 220l8 220t14 255s50 286s33
+80p21 Item{49P9} 7|205b21 209r10 214r19
+82U14*Update 83>7 84>7 85>7 86>7 7|123s10 131s10 246b14 263l8 263t14 278s7
+83p7 Item{49P9} 7|123r18 131r18 247b7 252r28 255r58
+84m7 Offset{5|62M9} 7|124r18 132r18 248b7 252r35 255r25
+85a7 Chars{5|81A9} 7|125r18 133r18 249b7 255r34 259r16 260r16
+86b7 Check{boolean} 7|126r18 134r18 250b7 255r10
+88U14*Update 89>7 90>7 91>7 92>7 7|265b14 279l8 279t14
+89p7 Item{49P9} 7|266b7 278r15
+90m7 Offset{5|62M9} 7|267b7 278r21
+91a7 Str{string} 7|268b7 278r35
+92b7 Check{boolean} 7|269b7 278r62
+94X4*Update_Error 7|256r16
+X 7 i-cstrin.adb
+46M12 C_Address{8|81M9} 49r37 52r48
+48V13 To_chars_ptr[3|20]{6|49P9} 88s14 238s17
+51V13 To_Address[3|20]{8|81M9} 88s28 154s36
+58V13 Peek{5|74E9} 58>19 59r19 172b13 175l8 175t12 214s13 296s24 324s27 353s24
+58p19 From{6|49P9} 172b19 174r20
+62U14 Poke 62>20 62>34 63r19 135s10 181b14 184l8 184t12 260s10
+62e20 Value{5|74E9} 181b20 183r30
+62p34 Into{6|49P9} 135r21 181b34 183r7 260r27
+66V14 "+"{6|49P9} 66>18 66>36 86b14 89l9 89t11 135s37 214s24 252s33 261s25
+. 296s35 324s38 353s35
+66p18 Left{6|49P9} 86b18 88r40
+66m36 Right{5|62M9} 86b36 88r64
+70V13 Position_Of_Nul{5|62M9} 70>30 117s16 190b13 199l8 199t23 234s18
+70a30 Into{5|81A9} 117r33 190b30 192r16 193r13 198r14 234r35
+76V13 Memory_Alloc{6|49P9} 76>27 77b<c,pvPortMalloc>22 118s18 151s38
+76m27 Size{5|62M9}
+79U14 Memory_Free 79>27 80b<c,vPortFree>22 101s7
+79p27 Address{6|49P9}
+110m7 Index{5|62M9} 117m7 118r33 122r10 125r50
+111p7 Pointer{6|49P9} 118m7 123r28 131r28 135r29 138r14
+151p7 Result{6|49P9} 154r48 165r14
+153a7 Result_Array{5|81A9} 154m11 154r11 155m27 155r27 162m24
+157m7 Count{5|62M9} 163m24
+192m11 J{5|62M9} 193r19 194r20
+206m7 Item_Index{5|62M9} 214r26 215r20 218m10 218r24
+252p7 Index{6|49P9} 260r35 261m10 261r19
+259m11 J{5|62M9} 260r23
+286a7 Result{5|81A9} 295r16 296m10 299r14
+295m11 J{5|62M9} 296r18 296r37
+320a10 Result{5|81A9} 323r19 324m13 326r16 327r23 331r17
+323m14 J{5|62M9} 324r21 324r40 326r24 327r36
+341a7 Result{5|81A9} 353m10 355r13 356r28 360m7 361r22
+352m11 J{5|62M9} 353r18 353r37 355r21 356r41
+X 8 system.ads
+54K9*System 7|34w6 34r18 35r6 35r35 46r25 8|180e11
+81M9*Address 7|46r32
+X 11 s-stoele.ads
+42K16*Storage_Elements 7|35w13 35r42 11|117e28
+54I9*Storage_Offset<integer> 7|88r48
+76V14*"+"{8|81M9} 7|88s46
+

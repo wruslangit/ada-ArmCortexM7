@@ -1,0 +1,69 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/stm32f4/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_EXCEPTIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U ada.interrupts%b	a-interr.adb		4c18e035 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W system%s		system.ads		system.ali
+
+U ada.interrupts%s	a-interr.ads		41f8c05b NE OL PK
+W ada%s			ada.ads			ada.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-except.ads		20160518112140 9a286512 ada.exceptions%s
+D a-interr.ads		20160513114800 f9bf7b57 ada.interrupts%s
+D a-interr.adb		20160422172618 b5a79b62 ada.interrupts%b
+D system.ads		20160313164745 87bb3514 system%s
+X 1 ada.ads
+16K9*Ada 19e8 3|41r9 69r5 4|45r14 96r5
+X 3 a-interr.ads
+41K13*Interrupts 1|16k9 3|69l9 69e19 4|45b18 96l9 96t19
+44I9*Interrupt_ID<short_short_integer> 49r38 51r38 54r19 58r21 63r21 65r42
+. 67r36 4|51r38 56r38 62r19 70r21 78r21 83r42 88r36
+47P9*Parameterless_Handler 54r40 57r21 61r25 62r21 4|62r40 69r21 76r25 77r21
+49V13*Is_Reserved{boolean} 49>26 4|51b13 54l8 54t19
+49i26 Interrupt{44I9} 4|51b26
+51V13*Is_Attached{boolean} 51>26 4|56b13 59l8 59t19
+51i26 Interrupt{44I9} 4|56b26
+53V13*Current_Handler{47P9} 54>7 4|61b13 66l8 66t23
+54i7 Interrupt{44I9} 4|62b7
+56U14*Attach_Handler 57>7 58>7 4|68b14 73l8 73t22
+57p7 New_Handler{47P9} 4|69b7
+58i7 Interrupt{44I9} 4|70b7
+60U14*Exchange_Handler 61<7 62>7 63>7 4|75b14 81l8 81t24
+61p7 Old_Handler{47P9} 4|76b7
+62p7 New_Handler{47P9} 4|77b7
+63i7 Interrupt{44I9} 4|78b7
+65U14*Detach_Handler 65>30 4|83b14 86l8 86t22
+65i30 Interrupt{44I9} 4|83b30
+67V13*Reference{5|81M9} 67>24 4|88b13 92l8 92t17
+67i24 Interrupt{44I9} 4|88b24
+X 5 system.ads
+54K9*System 3|39w6 67r57 4|47r8 5|180e11
+81M9*Address 3|67r64 4|88r57
+83m4*Null_Address{81M9} 4|91r14
+

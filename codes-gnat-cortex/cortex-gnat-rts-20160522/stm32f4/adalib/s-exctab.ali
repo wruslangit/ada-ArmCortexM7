@@ -1,0 +1,155 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/stm32f4/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_ALLOCATORS
+RV NO_IMPLICIT_LOOPS
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U system.exception_table%b  s-exctab.adb	dede973a OL PK
+W system%s		system.ads		system.ali
+W system.freertos%s	s-freert.ads		s-freert.ali
+W system.freertos.tasks%s  s-fretas.adb		s-fretas.ali
+W system.htable%s	s-htable.adb		s-htable.ali
+
+U system.exception_table%s  s-exctab.ads	e5ef776a BN EB EE NE OL PK
+W system%s		system.ads		system.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-unccon.ads		20160108121556 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-exctab.ads		20160108121556 54135002 system.exception_table%s
+D s-exctab.adb		20160108130434 6306a5ae system.exception_table%b
+D s-freert.ads		20160518111901 32bda127 system.freertos%s
+D s-fretas.ads		20160518112007 31156819 system.freertos.tasks%s
+D s-htable.ads		20160313164745 d8de0a8f system.htable%s
+D s-htable.adb		20160313164745 d1885448 system.htable%b
+D s-stalib.ads		20160518112740 3647127c system.standard_library%s
+D s-strhas.ads		20160108121556 269cd894 system.string_hash%s
+X 4 system.ads
+54K9*System 180e11 5|38r6 40r9 43r24 75r5 6|34r6 38r6 41r14 52r8 59r23 60r27
+. 61r53 63r36 70r20 79r27 108r53 140r23 256r5
+81M9*Address 6|59r30 60r34 61r60 70r27 79r34 108r60 140r30
+83m4*Null_Address{81M9} 6|193r40
+X 5 s-exctab.ads
+40K16*Exception_Table 4|54k9 5|75l12 75e27 6|41b21 256l12 256t27
+43K12*SSL=43:31 45r38 58r53 68r9
+45U14*Register_Exception 45>34 46r19 6|196s10 206b14 209l8 209t26 249s4 250s4
+. 251s4 252s4 253s4 254s4
+45p34 X{11|85P9} 6|206b34 208r29
+56V13*Internal_Exception{11|85P9} 57>7 58>7 6|164b13 200l8 200t26
+57a7 X{string} 6|165b7 170r34 170r45 175r13 175r25
+58b7 Create_If_Not_Exist{boolean} 6|166b7 183r30
+64V13*Registered_Exceptions_Count{natural} 6|215b13 232l8 232t35
+67A9*Exception_Data_Array(11|85P9)<integer> 71r18 6|118r18
+70U14*Get_Registered_Exceptions 71<7 72<7 6|117b14 134l8 134t33
+71a7 List{67A9} 6|118b7 125r15 127r20 129m10
+72i7 Last{integer} 6|119b7 125m7 127r13 128m10 128r18 129r16
+X 6 s-exctab.adb
+43P9 Locking_Procedure 47r25 49r27
+47p4 Lock_Task{43P9} 124r7 223r7
+49p4 Unlock_Task{43P9} 133r7 230r7
+54I9 HTable_Headers<short_short_integer> 59r46 64r20 140r46 144r31 144r53
+. 152r20 152r43
+56U14 Set_HT_Link 56>27 56>51 68r20 238b14 244l8 244t19
+56p27 T{11|85P9} 239b7 243r7
+56p51 Next{11|85P9} 240b7 243r23
+57V14 Get_HT_Link{11|85P9} 57>27 69r20 99b14 102l8 102t19
+57p27 T{11|85P9} 99b27 101r14
+59V13 Hash{54I9} 59>19 72r20 140b13 158l8 158t12
+59m19 F{4|81M9} 140b19 143r49
+60V13 Equal{boolean} 60>20 60>23 73r20 79b13 93l8 93t13
+60m20 A{4|81M9} 79b20 80r47
+60m23 B{4|81M9} 79b23 81r47
+61V13 Get_Key{4|81M9} 61>22 71r20 108b13 111l8 111t15
+61p22 T{11|85P9} 108b22 110r14
+63K12 Exception_HTable[9|171] 121r36 130r18 177r14 208r7 217r37 227r18
+80p7 S1{11|67P9} 85r13 87r16
+81p7 S2{11|67P9} 85r23
+82i7 J{integer} 85r17 85r27 87r20 90m13 90r18
+121p7 Data{11|85P9} 127r39 129r25 130m10
+141M12 S 144r23 144r28 145r14 154r28
+143p7 Str{11|67P9} 151r13 154r46
+144m7 Size{141M12} 152r72
+145m7 Tmp{141M12} 152r64 154m13 154r20
+146i7 J{positive} 149m7 151r18 154r51 156m10 156r15
+168P12 String_Ptr(string) 172r18
+170a7 Copy{string} 175m7 176m7 176r13 177m36 177r36 184r34 190r40
+171p7 Res{11|85P9} 177m7 183r10 186m10 196r30 199r14
+172p7 Dyn_Copy{168P12} 184m10 191r40
+216i7 Count{natural} 226m10 226r19 231r14
+217p7 Data{11|85P9} 225r13 227m10
+X 7 s-freert.ads
+23K16*FreeRTOS 6|34r13 48r6 50r6 7|49e20
+X 8 s-fretas.ads
+23K25*Tasks 6|34w22 48r15 50r15 8|113e26
+79U14*Enter_Critical_Region 6|48r21
+85U14*Exit_Critical_Region 6|50r21
+X 9 s-htable.ads
+43K16*HTable 6|38w13 63r43 9|225e18
+141I12 Header_Num 6|64r6
+144+12 Element 6|65r6
+154+12 Elmt_Ptr 6|66r6
+158*7 Null_Ptr{154+12} 6|67r6
+161U22 Set_Next 6|68r6
+162V22 Next{154+12} 6|69r6
+166+12 Key 6|70r6
+167V21 Get_Key{166+12} 6|71r6
+168V21 Hash{141I12} 6|72r6
+169V21 Equal{boolean} 6|73r6
+171k12*Static_HTable 6|63r50 9|213e21
+182U17*Set 6|208s24[63]
+185V16*Get{11|85P9} 6|177s31[63]
+201V16*Get_First{11|85P9} 6|121s53[63] 217s54[63]
+206V16*Get_Next{11|85P9} 6|130s35[63] 227s35[63]
+X 11 s-stalib.ads
+56K16*Standard_Library 5|38w13 43r31 6|52r15 11|252e28
+60A12*Big_String{string}<integer>
+67P9*Big_String_Ptr(60A12) 6|80r21 81r21 143r23
+74V13*To_Ptr[2|20]{67P9} 6|80s39 81s39 143s41
+81P9*Raise_Action
+84R9*Exception_Data 6|65r20 187r16 11|135e14
+85P9*Exception_Data_Ptr(84R9) 5|45r42 58r57 68r13 6|56r31 56r58 57r31 57r58
+. 61r26 66r20 99r31 99r58 108r26 121r14 166r53 171r18 206r38 217r15 239r14
+. 240r14
+98R9*Exception_Data
+99b7*Not_Handled_By_Others{boolean} 6|188m15
+106e7*Lang{character} 6|189m15
+112i7*Name_Length{natural} 6|190m15
+115m7*Full_Name{4|81M9} 6|110r16 191m15
+119p7*HTable_Ptr{85P9} 6|101r16 192m15 243m9
+124m7*Foreign_Data{4|81M9} 6|193m15
+129p7*Raise_Hook{81P9} 6|194m15
+152r4*Constraint_Error_Def{98R9} 6|254m24 254r24
+161r4*Numeric_Error_Def{98R9} 6|253m24 253r24
+170r4*Program_Error_Def{98R9} 6|252m24 252r24
+179r4*Storage_Error_Def{98R9} 6|251m24 251r24
+188r4*Tasking_Error_Def{98R9} 6|250m24 250r24
+197r4*Abort_Signal_Def{98R9} 6|249m24 249r24
+

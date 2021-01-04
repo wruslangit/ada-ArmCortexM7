@@ -1,0 +1,47 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/stm32f4/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U system.parameters%b	s-parame.adb		474237bc NE OL PK
+W system%s		system.ads		system.ali
+
+U system.parameters%s	s-parame.ads		cc81f3cf NE OL PU PK
+W system%s		system.ads		system.ali
+
+D system.ads		20160313164745 87bb3514 system%s
+D s-parame.ads		20160518111812 4b3ac6db system.parameters%s
+D s-parame.adb		20160108130718 0c78f167 system.parameters%b
+X 1 system.ads
+54K9*System 180e11 2|49r9 76r5 3|34r14 52r5
+X 2 s-parame.ads
+49K16*Parameters 1|54k9 2|76l12 76e22 3|34b21 52l12 52t22
+52I9*Size_Type<integer> 54r32 54r45 57r39 60r39 63r41 63r59 72r48 72r66 3|36r41
+. 36r59 44r39 46r39 48r48 48r66
+54i4*Unspecified_Size{52I9} 3|37r17
+57V13*Default_Stack_Size{52I9} 3|38s9 44b13
+60V13*Minimum_Stack_Size{52I9} 3|39s20 40s9 46b13
+63V13*Adjust_Storage_Size{52I9} 63>34 3|36b13
+63i34 Size{52I9} 3|37r10 39r13 42r9
+72V13*Secondary_Stack_Size{52I9} 72>35 3|48b13
+72i35 Stack_Size{52I9} 3|49r11
+

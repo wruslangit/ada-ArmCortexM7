@@ -1,0 +1,37 @@
+OUTPUT_FORMAT("elf32-littlearm")
+OUTPUT_ARCH(arm)
+
+SECTIONS
+{
+    RCC_AHBENR = 0x40021014;
+
+    GPIOA_MODER = 0x48000000;
+    GPIOA_PUPDR = 0x4800000c;
+    GPIOA_IDR = 0x48000010;
+    GPIOA_BSRR = 0x48000018;
+    GPIOA_BRR = 0x48000028;
+    
+    GPIOB_MODER = 0x48000400;
+    GPIOB_PUPDR = 0x4800040c;
+    GPIOB_IDR = 0x48000410;
+    GPIOB_BSRR = 0x48000418;
+    GPIOB_BRR = 0x48000428;
+    
+    GPIOF_MODER = 0x48001400;
+    GPIOF_PUPDR = 0x4800140c;
+    GPIOF_IDR = 0x48001410;
+    GPIOF_BSRR = 0x48001418;
+    GPIOF_BRR = 0x48001428;
+    
+    .vectors 0x08000000 :
+    {
+        LONG(0x20001000)
+        LONG(run + 1)
+        FILL(0)
+    }
+
+    .text 0x08000100 :
+    {
+        *(.text)
+    }
+}

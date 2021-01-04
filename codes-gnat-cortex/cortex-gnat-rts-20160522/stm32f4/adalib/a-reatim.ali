@@ -1,0 +1,171 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/stm32f4/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_FIXED_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U ada.real_time%b	a-reatim.adb		8ab9108c NE OL PK
+W ada%s			ada.ads			ada.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.arith_64%s	s-arit64.adb		s-arit64.ali
+W system.freertos%s	s-freert.ads		s-freert.ali
+W system.freertos.tasks%s  s-fretas.adb		s-fretas.ali
+
+U ada.real_time%s	a-reatim.ads		10a0da2f BN NE OL PK
+W ada%s			ada.ads			ada.ali
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-reatim.ads		20160108125854 2f5c5437 ada.real_time%s
+D a-reatim.adb		20160108125820 fd5d9d1b ada.real_time%b
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-arit64.ads		20160108121556 404da5f2 system.arith_64%s
+D s-freert.ads		20160518111901 32bda127 system.freertos%s
+D s-fretas.ads		20160518112007 31156819 system.freertos.tasks%s
+X 1 ada.ads
+16K9*Ada 19e8 2|36r9 145r5 3|37r14 271r5
+X 2 a-reatim.ads
+36K13*Real_Time 1|16k9 2|104E9 145l9 145e18 3|37b18 271l9 271t18
+38O9*Time<104O9> 39r26 40r26 50r26 52r26 52r63 53r45 53r63 54r26 54r63 55r26
+. 55r45 57r33 58r33 59r33 60r33 100r25 101r65 111c9 113r26 113r34 115r26
+. 115r34 3|63r25 63r57 66r14 69r44 69r57 72r14 87r25 87r57 90r14 93r32 133r26
+. 205r25 206r15 226r10 237r65 239r14
+39o4*Time_First{38O9} 113c4 3|212r24
+40o4*Time_Last{38O9} 115c4 3|212r45
+41N4*Time_Unit
+43O9*Time_Span<104O9> 44r31 45r31 46r31 47r31 49r20 52r45 53r26 54r45 55r63
+. 62r33 62r63 63r33 63r63 64r27 64r63 65r26 65r63 66r45 66r63 67r33 68r26
+. 68r63 70r28 70r46 72r33 73r33 74r33 75r33 77r32 78r50 80r48 81r48 82r48
+. 84r42 87r42 100r64 101r47 117c9 119r31 119r44 121r31 121r44 123r31 125r31
+. 127r20 3|45r25 45r60 48r14 51r42 51r60 54r14 63r39 69r25 75r32 75r50 78r14
+. 87r39 93r45 96r14 99r32 99r50 102r14 105r26 105r44 117r32 123r25 123r60
+. 126r14 160r48 162r14 169r48 171r14 178r42 187r47 189r14 196r42 205r64 217r52
+. 230r13 237r47 246r31 256r48 262r14
+44o4*Time_Span_First{43O9} 119c4
+45o4*Time_Span_Last{43O9} 121c4
+46o4*Time_Span_Zero{43O9} 123c4 3|108r14
+47o4*Time_Span_Unit{43O9} 125c4
+49o4*Tick{43O9} 127c4 3|151r14
+50V13*Clock{38O9} 3|133b13 154l8 154t13
+52V14*"+"{38O9} 52>19 52>37 3|63b14 67l9 67t11 239s24
+52o19 Left{38O9} 3|63b18 66r31
+52o37 Right{43O9} 3|63b31 66r50
+53V14*"+"{38O9} 53>19 53>37 3|69b14 73l9 73t11
+53o19 Left{43O9} 3|69b18 72r31
+53o37 Right{38O9} 3|69b36 72r50
+54V14*"-"{38O9} 54>19 54>37 3|87b14 91l9 91t11
+54o19 Left{38O9} 3|87b18 90r31
+54o37 Right{43O9} 3|87b31 90r50
+55V14*"-"{43O9} 55>19 55>37 3|93b14 97l9 97t11 217s69
+55o19 Left{38O9} 3|93b18 96r36
+55o37 Right{38O9} 3|93b24 96r55
+57V14*"<"{boolean} 57>19 57>25 133b31 3|217r19 219r12
+57o19 Left{38O9}
+57o25 Right{38O9}
+58V14*"<="{boolean} 58>19 58>25 134b31
+58o19 Left{38O9}
+58o25 Right{38O9}
+59V14*">"{boolean} 59>19 59>25 135b31 3|226r20
+59o19 Left{38O9}
+59o25 Right{38O9}
+60V14*">="{boolean} 60>19 60>25 136b31
+60o19 Left{38O9}
+60o25 Right{38O9}
+62V14*"+"{43O9} 62>19 62>25 3|75b14 79l9 79t11
+62o19 Left{43O9} 3|75b18 78r36
+62o25 Right{43O9} 3|75b24 78r55
+63V14*"-"{43O9} 63>19 63>25 3|99b14 103l9 103t11 108s29
+63o19 Left{43O9} 3|99b18 102r36
+63o25 Right{43O9} 3|99b24 102r55
+64V14*"-"{43O9} 64>19 3|105b14 109l9 109t11
+64o19 Right{43O9} 3|105b18 108r31
+65V14*"*"{43O9} 65>19 65>37 3|45b14 49l9 49t11 180s31 198s31
+65o19 Left{43O9} 3|45b18 48r36
+65i37 Right{integer} 3|45b36 48r44
+66V14*"*"{43O9} 66>19 66>37 3|51b14 55l9 55t11
+66i19 Left{integer} 3|51b18 54r25
+66o37 Right{43O9} 3|51b34 54r43
+67V14*"/"{integer} 67>19 67>25 3|117b14 121l9 121t11
+67o19 Left{43O9} 3|117b18 120r34
+67o25 Right{43O9} 3|117b24 120r53
+68V14*"/"{43O9} 68>19 68>37 3|123b14 127l9 127t11 162s29 171s29 189s29
+68o19 Left{43O9} 3|123b18 126r36
+68i37 Right{integer} 3|123b36 126r44
+70V14*"abs"{43O9} 70>20 137b31
+70o20 Right{43O9}
+72V14*"<"{boolean} 72>19 72>25 133b31
+72o19 Left{43O9}
+72o25 Right{43O9}
+73V14*"<="{boolean} 73>19 73>25 134b31
+73o19 Left{43O9}
+73o25 Right{43O9}
+74V14*">"{boolean} 74>19 74>25 135b31
+74o19 Left{43O9}
+74o25 Right{43O9}
+75V14*">="{boolean} 75>19 75>25 136b31
+75o19 Left{43O9}
+75o25 Right{43O9}
+77V13*To_Duration{duration} 77>27 3|246b13 250l8 250t19
+77o27 TS{43O9} 3|246b26 249r24
+78V13*To_Time_Span{43O9} 78>27 3|256b13 263l8 263t20
+78o27 D{duration} 3|256b27 262r25
+80V13*Nanoseconds{43O9} 80>27 141r19 3|187b13 190l8 190t19
+80i27 NS{integer} 3|187b26 189r25
+81V13*Microseconds{43O9} 81>27 139r19 3|160b13 163l8 163t20
+81i27 US{integer} 3|160b27 162r25
+82V13*Milliseconds{43O9} 82>27 140r19 3|169b13 172l8 172t20 180s14 198s14
+82i27 MS{integer} 3|169b27 171r25
+84V13*Seconds{43O9} 84>22 85r19 142r19 3|196b13 199l8 199t15
+84i22 S{integer} 3|196b22 198r28
+87V13*Minutes{43O9} 87>22 88r19 143r19 3|178b13 181l8 181t15
+87i22 M{integer} 3|178b22 180r28
+98I9*Seconds_Count<integer> 100r40 101r27 3|205r40 217r37 237r27
+100U14*Split 100>21 100<31 100<55 3|205b14 231l8 231t13
+100o21 T{38O9} 3|205b21 212r20 212r66 219r10 226r22 230r35
+100i31 SC{98I9} 3|205b31 216m7 220m10 220r17 226r16 227m10 227r16 230r51
+100o55 TS{43O9} 3|205b55 230m7
+101V13*Time_Of{38O9} 101>22 101>42 3|237b13 240l8 240t15
+101i22 SC{98I9} 3|237b22 239r20
+101o42 TS{43O9} 3|237b42 239r26
+104O9 Time_Base 107r8 111r21 117r26 3|48r25 54r32 66r20 66r39 72r20 72r39
+. 78r25 78r44 90r20 90r39 96r25 96r44 102r25 102r44 120r23 120r42 126r25
+. 151r21 230r24 230r40
+X 3 a-reatim.adb
+140V16*xTaskGetTickCount{4|63M9} 153s38
+145V16*xTaskGetTickCountFromISR{4|63M9} 152s38
+206o7 T_Val{2|38O9} 212m7 217r13 217r63
+X 4 interfac.ads
+38K9*Interfaces 3|34w6 140r41 145r48 4|179e15
+54I9*Integer_64<long_long_integer>
+63M9*Unsigned_32 3|140r52 145r59
+X 5 system.ads
+54K9*System 3|35r6 151r36 5|180e11
+X 6 s-arit64.ads
+44I12*Int64{4|54I9}
+54V13*Multiply_With_Ovflo_Check{44I12} 55i<c,__gnat_mulv64>22
+X 7 s-freert.ads
+23K16*FreeRTOS 3|35r13 151r43 7|49e20
+X 8 s-fretas.ads
+23K25*Tasks 3|35w22 151r52 8|113e26
+91V13*In_ISR{boolean} 3|151s58
+

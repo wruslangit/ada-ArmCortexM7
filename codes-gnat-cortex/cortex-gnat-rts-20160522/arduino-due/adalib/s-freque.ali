@@ -1,0 +1,110 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/arduino-due/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U system.freertos.queues%b  s-freque.adb	faacb08b NE OL PK
+W system%s		system.ads		system.ali
+W system.freertos%s	s-freert.ads		s-freert.ali
+W system.freertos.tasks%s  s-fretas.adb		s-fretas.ali
+
+U system.freertos.queues%s  s-freque.ads	e60f58ca BN NE OL PR PK
+W system.freertos%s	s-freert.ads		s-freert.ali
+
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-freert.ads		20160518111901 32bda127 system.freertos%s
+D s-freque.ads		20160518112345 d4b2f9ed system.freertos.queues%s
+D s-freque.adb		20160108121556 1f0b217f system.freertos.queues%b
+D s-fretas.ads		20160518112007 31156819 system.freertos.tasks%s
+X 1 interfac.ads
+51I9*Integer_32<integer>
+63M9*Unsigned_32
+X 2 system.ads
+54K9*System 180e11 4|23r9 59r5 5|21r6 23r14 143r5
+X 3 s-freert.ads
+23K16*FreeRTOS 2|54k9 3|49e20 4|23r16 59r12 5|21r13 23r21 143r12
+29I9*Base_Type<1|51I9> 5|75r49 81r30
+30M9*Unsigned_Base_Type<1|63M9> 5|29r28 30r28 36r42
+32M12*Tick_Type{30M9} 5|51r36 64r47 120r33 134r38
+34m4*Max_Delay{32M12} 5|63r47 133r38
+38I12*Status_Code{29I9} 5|51r54 57r19 75r67 82r19 99r49 105r19 120r51 126r19
+41i4*Pass{38I12} 5|65r23 89r23 110r23 135r23
+X 4 s-freque.ads
+23K25*Queues 3|23k16 4|56E9 59l21 59e27 5|23b30 143l21 143t27
+26R9*Queue 27r36 56c9
+27P9*Queue_Handle(26R9) 33r59 35r48 41r30 44r48 48r47 5|27r59 30r55 35r28
+. 45r48 49r36 70r52 73r49 95r48 98r36 115r47 118r33
+30+12 Item 36r39 42r21 45r39 49r59 5|37r42 46r39 50r36 56r33 71r43 74r49
+. 80r33 96r39 99r36 104r33 116r59 119r33 125r19
+31k12*Generic_Queues 30z12 52l8 52e22 5|25b17 141l8 141t22
+33V16*Create{27P9} 33>24 5|27b16 43l11 43t17
+33i24 Length{positive} 5|27b24 36r62
+35U17*Send 35>23 36>23 37>23 5|45b17 68l11 68t15
+35p23 To{27P9} 5|45b23 60r41
+36*23 The_Item{30+12} 5|46b23 56r41
+37i23 Ticks_To_Wait{natural} 5|47b23 62r45 64r58
+40U17*Send_From_ISR 41>10 42>10 5|70b17 93l11 93t24
+41p10 To{27P9} 5|70b32 86r45
+42*10 The_Item{30+12} 5|71b32 80r41
+44U17*Overwrite 44>28 45>28 5|95b17 113l11 113t20
+44p28 To{27P9} 5|95b28 108r46
+45*28 The_Item{30+12} 5|96b28 104r41
+48V16*Read{30+12} 48>22 49>22 5|115b16 139l11 139t15
+48p22 From{27P9} 5|115b22 130r32
+49i22 Ticks_To_Wait{natural} 5|116b22 132r36 134r49
+X 5 s-freque.adb
+28V19*xQueueCreate{4|27P9} 29>13 30>13 36s12
+29m13 Queue_Length{3|30M9} 36r26
+30m13 Item_Size{3|30M9} 37r26
+35p10 Result{4|27P9} 39r13 42r17
+48V19*xQueueSend{3|38I12} 49>13 50^13 51>13 60s12
+49p13 Queue{4|27P9} 60r24
+50p13 Item_To_Queue(4|30+12) 61r24
+51m13 Ticks_To_Wait{3|32M12} 62r24
+56*10 Item_To_Pass{4|30+12} 61m41 61r41
+57i10 Status{3|38I12} 59m10 65r13
+72V19*xQueueSendFromISR{3|38I12} 73>13 74^13 75<13 85s12
+73p13 Queue{4|27P9} 86r15
+74p13 Item_To_Queue(4|30+12) 87r15
+75i13 Higher_Priority_Task_Woken{3|29I9} 88r15
+80*10 Item_To_Pass{4|30+12} 87m45 87r45
+81i10 Task_Needs_Waking{3|29I9} 88m45 88r45 92r41
+82i10 Status{3|38I12} 84m10 89r13
+97V19*xQueueOverwrite{3|38I12} 98>13 99^13 108s12
+98p13 Queue{4|27P9} 108r29
+99p13 Item_To_Queue(4|30+12) 109r29
+104*10 Item_To_Pass{4|30+12} 109m46 109r46
+105i10 Status{3|38I12} 107m10 110r13
+117V19*XQueueReceive{3|38I12} 118>13 119<13 120>13 129s12
+118p13 Queue{4|27P9} 130r15
+119*13 Buffer{4|30+12} 131r15
+120m13 Ticks_To_Wait{3|32M12} 132r15
+125*10 Result{4|30+12} 131m32 131r32 138r17
+126i10 Status{3|38I12} 128m10 135r13
+X 6 s-fretas.ads
+23K25*Tasks 5|21w22 92r10 6|113e26
+93U14*Yield_From_ISR 5|92s16
+

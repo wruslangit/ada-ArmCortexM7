@@ -1,0 +1,133 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/stm32f429i/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U system.tasking.protected_objects%b  s-taprob.adb  e8c0c9f6 NE OL PK
+W ada.exceptions%s	a-except.adb		a-except.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+
+U system.tasking.protected_objects%s  s-taprob.ads  83849dcd NE OL PR PK
+W system%s		system.ads		system.ali
+W system.freertos%s	s-freert.ads		s-freert.ali
+W system.freertos.semaphores%s  s-fresem.adb	s-fresem.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-except.ads		20160518112140 9a286512 ada.exceptions%s
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-freert.ads		20160518111901 32bda127 system.freertos%s
+D s-fresem.ads		20160518112419 1462afb8 system.freertos.semaphores%s
+D s-fretas.ads		20160518112007 31156819 system.freertos.tasks%s
+D s-parame.ads		20160518111812 4b3ac6db system.parameters%s
+D s-secsta.ads		20160518154343 4e89dd04 system.secondary_stack%s
+D s-stoele.ads		20160108121556 2dc34a04 system.storage_elements%s
+D s-taskin.ads		20160518111009 f91959e2 system.tasking%s
+D s-taprob.ads		20160518110817 6eff6b97 system.tasking.protected_objects%s
+D s-taprob.adb		20160507175427 863fa261 system.tasking.protected_objects%b
+X 4 system.ads
+54K9*System 180e11 12|53r6 55r9 138r16 148r13 149r13 222r17 249r5 13|43r14
+. 80r28 85r25 107r31 156r31 227r31 271r5
+81M9*Address 12|138r23 148r20 149r20
+120I12*Any_Priority{integer} 12|222r24 13|85r32
+121I12*Priority{120I12} 13|80r35
+123I12*Interrupt_Priority{120I12} 13|107r38 156r38 227r38
+X 5 s-freert.ads
+23K16*FreeRTOS 49e20 12|53r13 219r19 13|83r19 84r7 105r10 108r10 128r13 142r13
+. 154r10 157r10 185r13 202r13 225r10 228r10 257r13 260r13
+X 6 s-fresem.ads
+23K25*Semaphores 40e31 12|53w22 219r28 13|83r28 84r16 128r22 185r22 260r22
+26R9*Semaphore
+27P9*Semaphore_Handle(26R9) 12|219r39
+29V13*Create_Semaphore{27P9} 13|83s39
+31U14*Give 13|84s27 260s33
+33U14*Take 13|128s33 185s33
+X 7 s-fretas.ads
+23K25*Tasks 113e26 13|105r19 108r19 142r22 154r19 157r19 202r22 225r19 228r19
+. 257r22
+26R9*TCB
+27P9*Task_Handle(26R9)
+50U14*Set_Priority 13|142s28 202s28 257s28
+51i28 To{4|120I12} 13|143r39 203r39 258r39
+67U14*Disable_Interrupts 13|108s25 157s25
+73U14*Enable_Interrupts 13|228s25
+91V13*In_ISR{boolean} 13|105s25 154s25 225s25
+X 11 s-taskin.ads
+45K16*Tasking 4|54k9 11|1223e19 12|55r16 249r12 13|43r21 271r12
+105P9*Task_Id(103R9) 12|235r15 13|111r32 160r32 239r32
+110p4*Null_Task{105P9} 13|86r23 249r29
+114V13*Self{105P9} 13|111s43 160s43 239s43
+222N4*Null_Entry 12|129r39
+224N4*Max_Entry 12|131r38
+230I9*Entry_Index<integer> 12|133r38
+519i7*Base_Priority{4|121I12} 13|124r31 187r31 258r60
+553i7*Protected_Action_Nesting{natural} 13|138m28 139r30 198m28 199r30 241r31
+. 254m28 255r30
+574p7*Thread{7|27P9} 13|143r31 203r31 258r31
+726r7*Common{506R9} 13|124r24 138m21 139r23 143r24 187r24 198m21 199r23 203r24
+. 241r24 254m21 255r23 258r24 258r53
+781i4*Unspecified_Priority{integer} 13|79r26
+X 12 s-taprob.ads
+55K24*Protected_Objects 11|45k16 12|218E9 249l20 249e37 13|43b29 271l20 271t37
+129N4*Null_Protected_Entry 134r12
+131N4*Max_Protected_Entry 134r36
+133I9*Protected_Entry_Index<11|230I9> 139r16 150r13
+136P9*Barrier_Function_Pointer(boolean) 138>9 139>9 158r17
+138m9 O{4|81M9}
+139i9 E{133I9}
+146P9*Entry_Action_Pointer 148>9 149>9 150>9 159r17
+148m9 O{4|81M9}
+149m9 P{4|81M9}
+150i9 E{133I9}
+157R9*Entry_Body 160e14 164r41
+158p7*Barrier{136P9}
+159p7*Action{146P9}
+164P9*Entry_Body_Access(157R9)
+166R9*Protection 176r41 218c9 242e14
+176P9*Protection_Access(166R9) 178r23 185r26 190r29 196r39 209r31 13|73r26
+. 103r29 152r39 223r31
+178p4*Null_PO{176P9}
+184U14*Initialize_Protection 185>7 186>7 13|72b14 87l8 87t29
+185p7 Object{176P9} 13|73b7 83r7 84r33 85r7 86r7
+186i7 Ceiling_Priority{integer} 13|74b7 76r34
+190U14*Lock 190>20 13|103b14 146l8 146t12
+190p20 Object{176P9} 13|103b20 107r13 120r16 124r47 128r39 135r13 143r45
+196U14*Lock_Read_Only 196>30 13|152b14 206l8 206t22
+196p30 Object{176P9} 13|152b30 156r13 181r16 185r39 187r47 195r13 203r45
+209U14*Unlock 209>22 13|223b14 263l8 263t14
+209p22 Object{176P9} 13|223b22 227r13 242r23 249r13 260r39
+219p7*L{6|27P9} 13|83m14 84r40 128r46 185r46 260r46
+222i7*Ceiling{4|120I12} 13|85m14 107r20 124r54 143r52 156r20 187r54 203r52
+. 227r20
+235p7*Owner{11|105P9} 13|86m14 120r23 135m20 181r23 195m20 242r30 249m20
+X 13 s-taprob.adb
+76i7 Init_Priority{integer} 79r10 80m10 85r46
+111p13 Self_Id{11|105P9} 120r31 124r16 135r29 138r13 139r15 143r16
+160p13 Self_Id{11|105P9} 181r31 187r16 195r29 198r13 199r15 203r16
+239p13 Self_Id{11|105P9} 241r16 242r39 254r13 255r15 258r16 258r45
+

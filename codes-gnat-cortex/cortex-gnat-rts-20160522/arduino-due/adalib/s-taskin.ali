@@ -1,0 +1,119 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/arduino-due/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U system.tasking%b	s-taskin.adb		58f0a817 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_conversion%s
+W system%s		system.ads		system.ali
+W system.freertos%s	s-freert.ads		s-freert.ali
+W system.freertos.tcb%s	s-fretcb.adb		s-fretcb.ali
+
+U system.tasking%s	s-taskin.ads		013ed9eb NE OL PR PK
+W system%s		system.ads		system.ali
+W system.freertos%s	s-freert.ads		s-freert.ali
+W system.freertos.tasks%s  s-fretas.adb		s-fretas.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-unccon.ads		20160108121556 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-freert.ads		20160518111901 32bda127 system.freertos%s
+D s-fretas.ads		20160518112007 31156819 system.freertos.tasks%s
+D s-fretcb.ads		20160518112513 c6ca4fda system.freertos.tcb%s
+D s-parame.ads		20160518111812 4b3ac6db system.parameters%s
+D s-secsta.ads		20160518154343 4e89dd04 system.secondary_stack%s
+D s-stoele.ads		20160108121556 2dc34a04 system.storage_elements%s
+D s-taskin.ads		20160518111009 f91959e2 system.tasking%s
+D s-taskin.adb		20160108131154 9ec83129 system.tasking%b
+X 1 ada.ads
+16K9*Ada 19e8 12|32r6 39r16
+X 2 a-unccon.ads
+20v14*Unchecked_Conversion 12|32w10 39r20
+X 4 system.ads
+54K9*System 180e11 11|42r6 43r6 45r9 340r28 447r58 519r23 729r25 781r47 1223r5
+. 12|33r6 35r14 39r42 44r5
+81M9*Address 11|340r35 447r65 12|39r49
+120I12*Any_Priority{integer}
+121I12*Priority{120I12} 11|519r30 781r54
+X 5 s-freert.ads
+23K16*FreeRTOS 49e20 11|42r13 574r16 12|33r13 41r31
+X 6 s-fretas.ads
+23K25*Tasks 113e26 11|42w22 574r25
+26R9*TCB
+27P9*Task_Handle(26R9) 11|574r31
+X 7 s-fretcb.ads
+23K25*TCB 37e24 12|33w22 41r40
+31V13*Get_Application_Parameter{4|81M9} 12|41s44
+X 9 s-secsta.ads
+38K16*Secondary_Stack 115e27 11|43w13 729r32
+49P9*Stack_Ptr(48R9) 11|729r48
+X 11 s-taskin.ads
+45K16*Tasking 4|54k9 11|1205E9 1223l12 1223e19 12|35b21 44l12 44t19
+103R9*Ada_Task_Control_Block 105r31 724c9 724d33 736e14 737r36
+105P9*Task_Id(103R9) 106r31 108r8 110r25 114r25 320r14 1206r14 12|37r25 39r58
+110p4*Null_Task{105P9}
+114V13*Self{105P9} 12|37b13 42l8 42t12
+222N4*Null_Entry 232r34
+224N4*Max_Entry 230r49 234r33
+226N4*Interrupt_Entry 230r30
+230I9*Entry_Index<integer> 236r33
+232N4*Null_Task_Entry 237r12
+234N4*Max_Task_Entry 237r31
+236I9*Task_Entry_Index<230I9> 724r45
+239R9*Entry_Call_Record 241r39 319c9 346e14 347r36 732r28
+241P9*Entry_Call_Link(239R9)
+319R9*Entry_Call_Record
+320p7*Self{105P9}
+340m7*Uninterpreted_Data{4|81M9}
+439R9*Activation_Chain 445r47 1205c9 1207e14
+445P9*Activation_Chain_Access(439R9)
+447P9*Task_Procedure_Access 447>52
+447m52 Arg{4|81M9}
+449P9*Access_Boolean(boolean)
+506R9*Common_ATCB 709e14 726r16
+519i7*Base_Priority{4|121I12}
+553i7*Protected_Action_Nesting{natural}
+574p7*Thread{6|27P9}
+724i33*Entry_Num{236I9}
+726r7*Common{506R9}
+729p7*Secondary_Stack{9|49P9}
+732r7*Entry_Call{319R9}
+759I12*Master_Level{integer} 760r25 772r38 773r38 774r38 775r38
+760I12*Master_ID{759I12}
+772i4*Foreign_Task_Level{759I12}
+773i4*Environment_Task_Level{759I12}
+774i4*Independent_Task_Level{759I12}
+775i4*Library_Task_Level{759I12}
+781i4*Unspecified_Priority{integer}
+793N4*Unspecified_CPU
+1206p7*T_ID{105P9}
+X 12 s-taskin.adb
+38V16 Convert_Task_Id[2|20]{11|105P9} 41s14
+

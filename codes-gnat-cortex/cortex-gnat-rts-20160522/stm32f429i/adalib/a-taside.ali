@@ -1,0 +1,78 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/stm32f429i/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_EXCEPTIONS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U ada.task_identification%b  a-taside.adb	f125e5ef NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U ada.task_identification%s  a-taside.ads	00099f78 NE OL PR PK
+W ada%s			ada.ads			ada.ali
+W system%s		system.ads		system.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-except.ads		20160518112140 9a286512 ada.exceptions%s
+D a-taside.ads		20160108130139 41577d96 ada.task_identification%s
+D a-taside.adb		20160108130121 b0729879 ada.task_identification%b
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-freert.ads		20160518111901 32bda127 system.freertos%s
+D s-fretas.ads		20160518112007 31156819 system.freertos.tasks%s
+D s-parame.ads		20160518111812 4b3ac6db system.parameters%s
+D s-secsta.ads		20160518154343 4e89dd04 system.secondary_stack%s
+D s-stoele.ads		20160108121556 2dc34a04 system.storage_elements%s
+D s-taskin.ads		20160518111009 f91959e2 system.tasking%s
+X 1 ada.ads
+16K9*Ada 19e8 3|42r9 73r5 4|21r14 108r5
+X 3 a-taside.ads
+42K13*Task_Identification 1|16k9 3|69E9 73l9 73e28 4|21b18 108l9 108t28
+45P9*Task_Id<12|105P9> 46r41 48r28 50r32 52r24 54r33 56r37 58r30 61r32 63r30
+. 65r41 69c9 71r28 4|40r32 46r30 51r41 71r33 73r14 76r37 82r24 88r30 99r32
+48p4*Null_Task_Id{45P9} 71c4 4|90r14 101r14
+50V14*"="{boolean} 50>18 50>24 4|40b14 44l9 44t11 90s12 101s12
+50p18 Left{45P9} 4|40b18 42r58
+50p24 Right{45P9} 4|40b24 43r58
+52V13*Image{string} 52>20 4|82b13 86l8 86t13
+52p20 T{45P9} 4|82b20 83r28
+54V13*Current_Task{45P9} 4|71b13 74l8 74t20
+56V13*Environment_Task{45P9} 4|76b13 80l8 80t24
+58U14*Abort_Task 58>26 4|46b14 49l8 49t18
+58p26 T{45P9} 4|46b26
+61V13*Is_Terminated{boolean} 61>28 4|99b13 106l8 106t21
+61p28 T{45P9} 4|99b28 101r10
+63V13*Is_Callable{boolean} 63>26 4|88b13 97l8 97t19
+63p26 T{45P9} 4|88b26 90r10
+65V13*Activation_Is_Complete{boolean} 65>37 4|51b13 55l8 55t30
+65p37 T{45P9} 4|51b37
+X 6 system.ads
+54K9*System 3|39w6 40r6 69r24 4|42r14 42r34 43r34 73r23 6|180e11
+X 12 s-taskin.ads
+45K16*Tasking 3|40w13 69r31 4|42r21 42r41 43r41 73r30 12|1223e19
+105P9*Task_Id(103R9) 3|69r39 4|42r49 43r49
+114V13*Self{105P9} 4|73s38
+

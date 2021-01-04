@@ -1,0 +1,75 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/arduino-due/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U system.freertos.semaphores%b  s-fresem.adb	0367d876 NE OL PK
+W ada.exceptions%s	a-except.adb		a-except.ali
+W system.freertos%s	s-freert.ads		s-freert.ali
+
+U system.freertos.semaphores%s  s-fresem.ads	26df0e9f NE OL PR PK
+W system.freertos%s	s-freert.ads		s-freert.ali
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-except.ads		20160518112140 9a286512 ada.exceptions%s
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-freert.ads		20160518111901 32bda127 system.freertos%s
+D s-fresem.ads		20160518112419 1462afb8 system.freertos.semaphores%s
+D s-fresem.adb		20160507171727 170577ce system.freertos.semaphores%b
+X 3 interfac.ads
+51I9*Integer_32<integer>
+63M9*Unsigned_32
+X 4 system.ads
+54K9*System 180e11 6|23r9 40r5 7|21r14 70r5
+X 5 s-freert.ads
+23K16*FreeRTOS 4|54k9 5|49e20 6|23r16 40r12 7|21r21 70r12
+29I9*Base_Type<3|51I9>
+30M9*Unsigned_Base_Type<3|63M9>
+32M12*Tick_Type{30M9} 7|55r23
+34m4*Max_Delay{32M12} 7|63r47
+38I12*Status_Code{29I9} 7|38r69 43r16 55r41 60r16
+41i4*Pass{38I12} 7|47r20 65r20
+X 6 s-fresem.ads
+23K25*Semaphores 5|23k16 6|37E9 40l21 40e31 7|21b30 70l21 70t31
+26R9*Semaphore 27r40 37c9
+27P9*Semaphore_Handle(26R9) 29r46 31r45 33r45 7|23r46 24r46 29r25 37r45 38r44
+. 52r45 54r23
+29V13*Create_Semaphore{27P9} 7|23b13 35l8 35t24
+31U14*Give 31>20 7|37b14 50l8 50t12
+31p20 The_Semaphore{27P9} 7|37b20 45r46
+33U14*Take 33>20 7|52b14 68l8 68t12
+33p20 The_Semaphore{27P9} 7|52b20 62r47
+X 7 s-fresem.adb
+24V16*xSemaphoreCreateBinary{6|27P9} 29s45
+29p7 Result{6|27P9} 31r10 34r14
+38V16*xSemaphoreGive{5|38I12} 38>32 45s17
+38p32 Semaphore{6|27P9} 45r33
+43i7 Status{5|38I12} 45m7 47r10
+53V16*xSemaphoreTake{5|38I12} 54>10 55>10 62s17
+54p10 Semaphore{6|27P9} 62r33
+55m10 Block_Time{5|32M12} 63r33
+60i7 Status{5|38I12} 62m7 65r10
+

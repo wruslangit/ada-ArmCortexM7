@@ -1,0 +1,44 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/stm32f4/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+
+U system.freertos.memory%s  s-fremem.ads	1ba4b41b NE OL PR PK
+W system.freertos%s	s-freert.ads		s-freert.ali
+
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-freert.ads		20160518111901 32bda127 system.freertos%s
+D s-fremem.ads		20160518112228 2919153c system.freertos.memory%s
+X 2 system.ads
+54K9*System 180e11 4|23r9 27r30 33r26 39r5
+81M9*Address 4|27r37 33r33
+X 3 s-freert.ads
+23K16*FreeRTOS 2|54k9 3|49e20 4|23r16 39r12
+X 4 s-fremem.ads
+23K25*Memory 3|23k16 4|39l21 39e27
+26V13*Malloc{2|81M9} 27>7
+27i7 Size{natural}
+33U14*Free 33>20
+33m20 Ptr{2|81M9}
+

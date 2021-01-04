@@ -1,0 +1,83 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/stm32f4/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLICIT_LOOPS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U stm32f40x.wwdg%s	stm32f40x-wwdg.ads	3b0ad4a9 NE OO PR PK
+W stm32f40x%s		stm32f40x.ads		stm32f40x.ali
+W system%s		system.ads		system.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D stm32f40x.ads		20160422183910 63cbc99a stm32f40x%s
+D stm32f40x-wwdg.ads	20160422183911 df7a2827 stm32f40x.wwdg%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-unstyp.ads		20160108121556 510692af system.unsigned_types%s
+X 2 stm32f40x.ads
+11K9*STM32F40x 231e14 3|9r9 20r26 21r29 30r23 45r27 52r33 65r19 78r29 89r24
+. 105r29 112r23 147r5
+21M9*Bit 3|21r39 52r43 78r39 105r39
+23M9*UInt2 3|65r29
+33M9*UInt7 3|20r36 45r37
+59M9*UInt22 3|89r34
+63M9*UInt24 3|30r33
+77M9*UInt31 3|112r33
+156m4*WWDG_Base{4|81M9} 3|145r30
+X 3 stm32f40x-wwdg.ads
+9K19*WWDG 2|11k9 3|147l15 147e19
+20M12*CR_T_Field{2|33M9} 26r23
+21M12*CR_WDGA_Field{2|21M9} 28r23
+24R9*CR_Register 32e6 35r8 129r13
+26m7*T{20M12} 36r7
+28m7*WDGA{21M12} 37r7
+30m7*Reserved_8_31{2|63M9} 38r7
+45M12*CFR_W_Field{2|33M9} 83r24
+52M12*CFR_WDGTB_Element{2|21M9} 55r52
+55A9*CFR_WDGTB_Field_Array(52M12)<integer> 68r19
+59R9*CFR_WDGTB_Field 60d7 71e6 73r8 85r24
+60b7*As_Array{boolean} 62r12 85m44
+65m13*Val{2|23M9} 74r7 85m63
+68a13*Arr{55A9} 75r7
+78M12*CFR_EWI_Field{2|21M9} 87r24
+81R9*CFR_Register 91e6 94r8 131r13
+83m7*W{45M12} 95r7
+85r7*WDGTB{59R9} 96r7
+87m7*EWI{78M12} 97r7
+89m7*Reserved_10_31{2|59M9} 98r7
+105M12*SR_EWIF_Field{2|21M9} 110r23
+108R9*SR_Register 114e6 117r8 133r13
+110m7*EWIF{105M12} 118r7
+112m7*Reserved_1_31{2|77M9} 119r7
+127R9*WWDG_Peripheral 135e6 137r8 144r26
+129r7*CR{24R9} 138r7
+131r7*CFR{81R9} 139r7
+133r7*SR{108R9} 140r7
+144r4*WWDG_Periph{127R9}
+X 4 system.ads
+54K9*System 3|7w6 33r24 92r24 115r24 4|180e11
+81M9*Address
+105n41*Low_Order_First{105E9} 3|33r31 92r31 115r31
+

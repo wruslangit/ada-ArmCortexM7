@@ -1,0 +1,70 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/arduino-due/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U system.memory%b	s-memory.adb		930b7ac4 NE OL PK
+W ada.exceptions%s	a-except.adb		a-except.ali
+W system%s		system.ads		system.ali
+W system.freertos%s	s-freert.ads		s-freert.ali
+W system.freertos.memory%s  s-fremem.ads	s-fremem.ali
+
+U system.memory%s	s-memory.ads		defc5ea2 EB NE OL PR PK
+W system%s		system.ads		system.ali
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-except.ads		20160518112140 9a286512 ada.exceptions%s
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-freert.ads		20160518111901 32bda127 system.freertos%s
+D s-fremem.ads		20160518112228 2919153c system.freertos.memory%s
+D s-memory.ads		20160518112912 59476bb6 system.memory%s
+D s-memory.adb		20160108130635 e355044e system.memory%b
+X 4 system.ads
+54K9*System 180e11 7|48r9 57r42 72r26 81r14 82r29 111r5 8|46r6 48r14 54r42
+. 55r21 74r19 85r26 95r14 97r14 103r14 106r5
+81M9*Address 7|57r49 72r33 81r21 82r36 8|54r49 55r28 85r33 95r21 97r21
+83m4*Null_Address{81M9} 8|74r26 103r21
+95V14*"="{boolean} 8|74r17
+X 5 s-freert.ads
+23K16*FreeRTOS 49e20 8|46r13 72r17 87r7
+X 6 s-fremem.ads
+23K25*Memory 39e27 8|46w22 72r26 87r16
+26V13*Malloc{4|81M9} 8|72s33
+33U14*Free 8|87s23
+X 7 s-memory.ads
+48K16*Memory 4|54k9 7|107E31 111l12 111e18 8|48b21 106l12 106t18
+52M9*size_t 57r27 82r14 8|54r27 56r21 59r17 96r14
+57V13*Alloc{4|81M9} 57>20 107i<c,__gnat_malloc>22 8|54b13 79l8 79t13
+57m20 Size{52M9} 8|54b20 56r31 59r10 68r10
+72U14*Free 72>20 108i<c,__gnat_free>22 8|85b14 88l8 88t12
+72m20 Ptr{4|81M9} 8|85b20 87r29
+80V13*Realloc{4|81M9} 81>7 82>7 109i<c,__gnat_realloc>22 8|94b13 104l8 104t15
+81m7 Ptr{4|81M9} 8|95b7 99r28
+82m7 Size{52M9} 8|96b7 100r28
+X 8 s-memory.adb
+55m7 Result{4|81M9} 72m7 74r10 78r14
+56m7 Actual_Size{7|52M9} 69m10 72r50
+

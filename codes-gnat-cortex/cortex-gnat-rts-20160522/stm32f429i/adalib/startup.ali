@@ -1,0 +1,267 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A -Wno-attributes
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/stm32f429i/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U startup%b		startup.adb		4b71a758 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.interrupts%s	a-interr.adb		a-interr.ali
+W ada.interrupts.names%s  a-intnam.ads		a-intnam.ali
+W interfaces%s		interfac.ads		interfac.ali
+W stm32f429x%s		stm32f429x.ads		stm32f429x.ali
+W stm32f429x.flash%s	stm32f429x-flash.ads	stm32f429x-flash.ali
+W stm32f429x.pwr%s	stm32f429x-pwr.ads	stm32f429x-pwr.ali
+W stm32f429x.rcc%s	stm32f429x-rcc.ads	stm32f429x-rcc.ali
+W system%s		system.ads		system.ali
+W system.freertos%s	s-freert.ads		s-freert.ali
+W system.freertos.tasks%s  s-fretas.adb		s-fretas.ali
+W system.machine_code%s	s-maccod.ads		s-maccod.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.task_info%s	s-tasinf.ads		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.restricted%s  s-tasres.ads	s-tasres.ali
+W system.tasking.restricted.stages%s  s-tarest.adb  s-tarest.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+U startup%s		startup.ads		5225dbb4 EB NE OO PK
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-interr.ads		20160313160035 d2550f93 ada.interrupts%s
+D a-intnam.ads		20160513115513 264cd552 ada.interrupts.names%s
+D a-unccon.ads		20160108121556 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20160108121556 69adb1b9 interfaces%s
+D startup.ads		20160518170947 5225dbb4 startup%s
+D startup.adb		20160520104419 bf3733f5 startup%b
+D startup-set_up_clock.adb  20160404083824 b4d075e6 startup.set_up_clock
+D stm32f429x.ads	20160422172028 b26c7295 stm32f429x%s
+D stm32f429x-flash.ads	20160422172028 d766d450 stm32f429x.flash%s
+D stm32f429x-pwr.ads	20160422172028 7f04eb00 stm32f429x.pwr%s
+D stm32f429x-rcc.ads	20160422172028 2dc1bc91 stm32f429x.rcc%s
+D system.ads		20160313164745 87bb3514 system%s
+D s-freert.ads		20160518111901 32bda127 system.freertos%s
+D s-fretas.ads		20160518112007 31156819 system.freertos.tasks%s
+D s-maccod.ads		20160108121556 0fbb7bce system.machine_code%s
+D s-parame.ads		20160518111812 4b3ac6db system.parameters%s
+D s-secsta.ads		20160518154343 4e89dd04 system.secondary_stack%s
+D s-stoele.ads		20160108121556 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20160108121556 ed88f8fb system.storage_elements%b
+D s-tasinf.ads		20160518111325 0bbd067f system.task_info%s
+D s-taskin.ads		20160518111009 f91959e2 system.tasking%s
+D s-tasres.ads		20160518111100 97ef7007 system.tasking.restricted%s
+D s-tarest.ads		20160517161620 0eb8c763 system.tasking.restricted.stages%s
+D s-unstyp.ads		20160108121556 510692af system.unsigned_types%s
+X 1 ada.ads
+16K9*Ada 19e8 7|21r6 246r13 247r28
+X 2 a-interr.ads
+41K13*Interrupts 69e19 7|21r10 246r17 247r32
+44I9*Interrupt_ID<short_short_integer> 7|246r28
+X 3 a-intnam.ads
+19K24*Names 115e25 7|21w21 247r43
+113i4*DMA2D_IRQ{2|44I9} 7|247r49
+X 5 interfac.ads
+38K9*Interfaces 179e15 7|22w6 111r18 171r14 173r16 177r21 231r14 233r16 237r21
+63M9*Unsigned_32 7|111r29 171r25 173r27 177r32 231r25 233r27 237r32
+X 6 startup.ads
+22K9*Startup 24l5 24e12 7|32b14 264l5 264t12 8|25r11
+X 7 startup.adb
+35U14 Program_Initialization 67b14 160l8 160t30
+42U14 Set_Up_Clock 44b14 141s7 8|26b11 162l5 162t17
+46U14 Environment_Task 46>32 47b14 57l8 57t24 150r27
+46m32 Arg{13|81M9} 47b32 48r28
+50U17*Main 56s7
+61b4 Environment_Task_Elaborated{boolean} 152m27 152r27
+62r4 Activation_Chain_Dummy{22|439R9} 153m27 153r27
+64r4 Environment_TCB{22|724R9} 155m27 155r27
+79m7*Sdata{19|64M9} 88m62 88r62
+81m7*Edata{19|64M9} 88m46 88r46
+83m7*Sbss{19|64M9} 97m60 97r60
+85m7*Ebss{19|64M9} 97m45 97r45
+88i7 Data_Size{19|54I9} 91r43 94r42
+91a7*Data_In_Flash{19|70A9} 129r23
+94a7*Data_In_Sram{19|70A9} 129m7
+97i7 Bss_Size{19|54I9} 99r33
+99a7*Bss{19|70A9} 131m7
+102E12 CP_Access 103e7 106r46
+102n26 Denied{102E12} 112r44 134r55
+102n34 Privileged{102E12} 105r28
+102n46 Reserved{102E12} 105r40
+102n56 Full{102E12} 134r27 134r39
+106A12 CP_Accesses(102E12)<integer> 112r18
+110R12 SCB_Registers 114e7 116r11 121r13
+111m10 VTOR{5|63M9} 117r10 139m11
+112a10 CPACR{106A12} 118r10 134m11
+121r7 SCB{110R12} 134m7 139m7
+169U14 Dummy_Handler 170b14 182l8 182t21 249r30 251r30 252r30 253r30
+171m7 IPSR{5|63M9} 177m62 177r62
+184U14 HardFault_Handler 185b14 190l8 190t25 250r30
+195U14 SVC_Handler 197r26 198b14 203l8 203t19 254r30
+205U14 PendSV_Handler 207r26 208b14 213l8 213t22 255r30
+215U14 SysTick_Handler 217r26 218b14 223l8 223t23 256r30
+227U14 IRQ_Handler 229r26 230b14 242l8 242t19 257r30
+231m7 IPSR{5|63M9} 237m62 237r62
+244P9 Handler 247r63
+247a4 Vectors(244P9) 262r27
+X 8 startup-set_up_clock.adb
+32r7 APB1ENR{12|905R9} 34m7 35m7 36r29
+44r7 CR{11|31R9} 46m7 47m7 48r24
+53r7 CR{12|33R9} 55m7 56m7 57r24 59m10 60r20
+66r7 CR{12|33R9} 68m7 69m7 71r24 73m10 74r20
+80r7 CSR{12|1612R9} 82m7 83m7 84r25 86m10 87r20
+95r7 CR{12|33R9} 103m7 104m7 105r24 107m10 108r20
+115r7 CSR{11|87R9} 118m10 119r20
+125r7 ACR{10|27R9} 135m10 136r20
+153r7 CFGR{12|179R9} 157m10 158r20
+X 9 stm32f429x.ads
+10K9*STM32F429x 8|21r6 21r28 22r6 22r28 23r6 23r28 27r13 44r13 53r12 66r12
+. 80r13 95r12 115r13 125r13 126r16 153r14 154r16 9|252e15
+22M9*Bit 8|27r24
+24M9*UInt2 8|154r27
+26M9*UInt3 8|126r27
+28M9*UInt4
+32M9*UInt6
+36M9*UInt9
+X 10 stm32f429x-flash.ads
+8K20*FLASH 8|21w17 21r39 125r24 10|281e21
+27R9*ACR_Register 8|125r30 10|45e6
+29m7*LATENCY{19M12} 8|128m28 136r24
+33m7*PRFTEN{20M12} 8|129m28
+35m7*ICEN{21M12} 8|130m28
+37m7*DCEN{22M12} 8|131m28
+251r7*ACR{27R9} 8|128m20 135r30
+278r4*FLASH_Periph{249R9} 8|128m7 135r17
+X 11 stm32f429x-pwr.ads
+8K20*PWR 8|22w17 22r39 44r24 115r24 11|146e19
+31R9*CR_Register 8|44r28 11|57e6
+53m7*VOS{28M12} 8|47m10
+87R9*CSR_Register 8|115r28 11|109e6
+105m7*VOSRDY{84M12} 8|119r24
+131r7*CR{31R9} 8|46r24 48m18
+133r7*CSR{87R9} 8|118r28
+143r4*PWR_Periph{129R9} 8|46r13 48m7 118r17
+X 12 stm32f429x-rcc.ads
+8K20*RCC 8|23w17 23r39 53r23 66r23 80r24 95r23 153r25 12|1892e19
+33R9*CR_Register 8|53r27 66r27 95r27 12|65e6
+35m7*HSION{19M12} 8|56m10
+37m7*HSIRDY{20M12} 8|60r23
+45m7*HSEON{23M12} 8|69m10
+47m7*HSERDY{24M12} 8|74r23
+55m7*PLLON{27M12} 8|104m10
+57m7*PLLRDY{28M12} 8|108r23
+89M12*PLLCFGR_PLLM_Field{9|32M9}
+90M12*PLLCFGR_PLLN_Field{9|36M9}
+93M12*PLLCFGR_PLLQ_Field{9|28M9}
+99m7*PLLM{89M12} 8|97m30
+101m7*PLLN{90M12} 8|98m30
+105m7*PLLP{91M12} 8|99m30
+109m7*PLLSRC{92M12} 8|100m30
+114m7*PLLQ{93M12} 8|101m30
+138M12*CFGR_HPRE_Field{9|28M9}
+148A9*CFGR_PPRE_Field_Array(145M12)<integer>
+153b7*As_Array{boolean} 8|144m19
+161a13*Arr{148A9} 8|145m19
+179R9*CFGR_Register 8|153r29 12|203e6
+181m7*SW{136M12} 8|142m7
+183m7*SWS{137M12} 8|158r25
+185m7*HPRE{138M12} 8|143m7
+189r7*PPRE{152R9} 8|144m7
+193m7*MCO1{172M12} 8|147m7
+197m7*MCO1PRE{174M12} 8|148m7
+199m7*MCO2PRE{175M12} 8|150m7
+201m7*MCO2{176M12} 8|149m7
+905R9*APB1ENR_Register 8|32r17 12|967e6
+959m7*PWREN{899M12} 8|35m15
+1612R9*CSR_Register 8|80r28 12|1636e6
+1614m7*LSION{1600M12} 8|83m11
+1616m7*LSIRDY{1601M12} 8|87r24
+1808r7*CR{33R9} 8|55r24 57m18 59r27 68r24 71m18 73r27 103r24 105m18 107r27
+1810r7*PLLCFGR{96R9} 8|97m18
+1812r7*CFGR{179R9} 8|141m15 157r29
+1832r7*APB1ENR{905R9} 8|34r29 36m18
+1848r7*CSR{1612R9} 8|82r25 84m18 86r28
+1889r4*RCC_Periph{1806R9} 8|34r18 36m7 55r13 57m7 59r16 68r13 71m7 73r16
+. 82r14 84m7 86r17 97m7 103r13 105m7 107r16 141m4 157r18
+X 13 system.ads
+54K9*System 7|23r6 24r6 27r6 28r6 29r6 30r6 46r38 47r38 62r29 64r30 65r7
+. 77r11 125r22 136r7 137r7 144r7 145r27 146r27 147r27 148r27 149r27 151r27
+. 159r7 175r7 235r7 13|180e11
+81M9*Address 7|46r45 47r45 125r22
+83m4*Null_Address{81M9} 7|146r34 151r34
+X 14 s-freert.ads
+23K16*FreeRTOS 7|27r13 159r14 14|49e20
+X 15 s-fretas.ads
+23K25*Tasks 7|27w22 159r23 15|113e26
+101U14*Start_Scheduler 7|159s29
+X 16 s-maccod.ads
+36K16*Machine_Code 7|23w13 136r14 137r14 175r14 235r14 16|130e24
+44I9*Asm_Output_Operand<integer>
+82U14*Asm 7|136s27 137s27 175s27 235s27
+84i6 Outputs{44I9} 7|177r10 237r10
+87b6 Volatile{boolean} 7|136r39 137r39 178r10 238r10
+X 17 s-parame.ads
+49K16*Parameters 7|28w13 147r34 17|76e22
+52I9*Size_Type<integer>
+54i4*Unspecified_Size{52I9} 7|147r45
+X 19 s-stoele.ads
+42K16*Storage_Elements 7|24w13 77r18 19|117e28
+54I9*Storage_Offset<integer> 7|88r28 97r27
+64M9*Storage_Element 7|79r15 81r15 83r14 85r14
+70A9*Storage_Array(64M9)<54I9> 7|91r23 94r22 99r13
+91V14*"-"{54I9} 7|88s60 97s58
+X 21 s-tasinf.ads
+46K16*Task_Info 7|30w13 148r34 21|53e21
+51e4*Unspecified_Task_Info{49E9} 7|148r44
+X 22 s-taskin.ads
+45K16*Tasking 7|29r13 62r36 64r37 65r14 144r14 145r34 149r34 22|1223e19
+103R9*Ada_Task_Control_Block 7|64r45 22|736e14
+105P9*Task_Id(103R9)
+222N4*Null_Entry 7|65r22
+439R9*Activation_Chain 7|62r44 22|1207e14
+447P9*Task_Procedure_Access
+449P9*Access_Boolean(boolean)
+724R9*Ada_Task_Control_Block
+781i4*Unspecified_Priority{integer} 7|145r42
+793N4*Unspecified_CPU 7|149r42
+X 23 s-tasres.ads
+36K24*Restricted 7|29r21 144r22 23|38e30
+X 24 s-tarest.ads
+54K35*Stages 7|29w32 144r33 24|153e37
+57U14*Create_Restricted_Task 7|144s40
+58i7 Priority{integer} 7|145r10
+59m7 Stack_Address{13|81M9} 7|146r10
+60i7 Size{17|52I9} 7|147r10
+61e7 Task_Info{21|49E9} 7|148r10
+62i7 CPU{integer} 7|149r10
+63p7 State{22|447P9} 7|150r10
+64m7 Discriminants{13|81M9} 7|151r10
+65p7 Elaborated{22|449P9} 7|152r10
+66r7 Chain{22|439R9} 7|153r10
+67a7 Task_Image{string} 7|154r10
+68p7 Created_Task{22|105P9} 7|155r10
+

@@ -1,0 +1,81 @@
+V "GNAT Lib v2015"
+A -nostdinc
+A -Og
+A --RTS=/Users/simon/cortex-gnat-rts/cortex-gnat-rts-20160522/arduino-due/
+A -ffunction-sections
+A -fdata-sections
+A -gnatA
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -gnatp
+A -gnatg
+A -gnatn
+A -gnatq
+A -gnatQ
+A -g
+P DB
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U ada.interrupts.names%s  a-intnam.ads		79557989 NE OL PU PK
+W ada.interrupts%s	a-interr.adb		a-interr.ali
+
+D ada.ads		20160108121556 3ffc8e18 ada%s
+D a-interr.ads		20160108123626 89abd84a ada.interrupts%s
+D a-intnam.ads		20160108123626 f0fea1c3 ada.interrupts.names%s
+D system.ads		20160313164745 87bb3514 system%s
+X 1 ada.ads
+16K9*Ada 19e8 3|24r9 73r5
+X 2 a-interr.ads
+41K13*Interrupts 1|16k9 2|70e19 3|24r13 73r9
+X 3 a-intnam.ads
+24K24*Names 2|41k13 3|73l20 73e25
+27N4*SUPC_IRQ
+28N4*RSTC_IRQ
+29N4*RTC_IRQ
+30N4*RTT_IRQ
+31N4*WDG_IRQ
+32N4*PMC_IRQ
+33N4*EEFC0_IRQ
+34N4*EEFC1_IRQ
+35N4*UART_IRQ
+36N4*SMC_SDRAMC_IRQ
+37N4*SDRAMC_IRQ
+38N4*PIOA_IRQ
+39N4*PIOB_IRQ
+40N4*PIOC_IRQ
+41N4*PIOD_IRQ
+42N4*PIOE_IRQ
+43N4*PIOF_IRQ
+44N4*USART0_IRQ
+45N4*USART1_IRQ
+46N4*USART2_IRQ
+47N4*USART3_IRQ
+48N4*HSMCI_IRQ
+49N4*TWI0_IRQ
+50N4*TWI1_IRQ
+51N4*SPI0_IRQ
+52N4*SPI1_IRQ
+53N4*SSC_IRQ
+54N4*TC0_IRQ
+55N4*TC1_IRQ
+56N4*TC2_IRQ
+57N4*TC3_IRQ
+58N4*TC4_IRQ
+59N4*TC5_IRQ
+60N4*TC6_IRQ
+61N4*TC7_IRQ
+62N4*TC8_IRQ
+63N4*PWM_IRQ
+64N4*ADC_IRQ
+65N4*DACC_IRQ
+66N4*DMAC_IRQ
+67N4*UOTGHS_IRQ
+68N4*TRNG_IRQ
+69N4*EMAC_IRQ
+70N4*CAN0_IRQ
+71N4*CAN1_IRQ
+
