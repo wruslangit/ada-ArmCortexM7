@@ -1,0 +1,31 @@
+
+
+wruslan@HPEliteBook8470p-Ub2004-rt38:~$ locate target/stm32f7x.cfg
+/opt/st/stm32cubeide_1.5.0/plugins/com.st.stm32cube.ide.mcu.debug.openocd_1.5.0.202011091203/resources/openocd/st_scripts/target/stm32f7x.cfg
+/usr/share/openocd/scripts/target/stm32f7x.cfg
+wruslan@HPEliteBook8470p-Ub2004-rt38:~$ 
+
+wruslan@HPEliteBook8470p-Ub2004-rt38:~$ which openocd
+/usr/bin/openocd
+wruslan@HPEliteBook8470p-Ub2004-rt38:~$ openocd --help
+Open On-Chip Debugger 0.10.0
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Open On-Chip Debugger
+Licensed under GNU GPL v2
+--help       | -h	display this help
+--version    | -v	display OpenOCD version
+--file       | -f	use configuration file <name>
+--search     | -s	dir to search for config files and scripts
+--debug      | -d	set debug level <0-3>
+--log_output | -l	redirect log output to file <name>
+--command    | -c	run <command>
+wruslan@HPEliteBook8470p-Ub2004-rt38:~$ 
+
+===========================================================
+
+
+
+
+
